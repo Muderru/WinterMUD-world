@@ -1,0 +1,105 @@
+{
+  "port": 4000,
+  "bundles": [
+    "areas",
+    "channels",
+    "classes",
+    "combat",
+    "commands",
+    "debug",
+    "effects",
+    "input-events",
+    "lib",
+    "npc-behaviors",
+    "player-events",
+    "quests",
+    "crafting",
+    "vendor-npcs",
+    "player-groups",
+    "progressive-respawn",
+    "telnet-networking",
+    "websocket-networking",
+    "lootable-npcs"
+  ],
+  "dataSources": {
+    "YamlArea": {
+      "require": "ranvier-datasource-file.YamlAreaDataSource"
+    },
+    "Yaml": {
+      "require": "ranvier-datasource-file.YamlDataSource"
+    },
+    "YamlDirectory": {
+      "require": "ranvier-datasource-file.YamlDirectoryDataSource"
+    },
+    "JsonDirectory": {
+      "require": "ranvier-datasource-file.JsonDirectoryDataSource"
+    }
+  },
+  "entityLoaders": {
+    "accounts": {
+      "source": "JsonDirectory",
+      "config": {
+        "path": "data/account"
+      }
+    },
+    "players": {
+      "source": "JsonDirectory",
+      "config": {
+        "path": "data/player"
+      }
+    },
+    "areas": {
+      "source": "YamlArea",
+      "config": {
+        "path": "bundles/[BUNDLE]/areas"
+      }
+    },
+    "npcs": {
+      "source": "Yaml",
+      "config": {
+        "path": "bundles/[BUNDLE]/areas/[AREA]/npcs.yml"
+      }
+    },
+    "items": {
+      "source": "Yaml",
+      "config": {
+        "path": "bundles/[BUNDLE]/areas/[AREA]/items.yml"
+      }
+    },
+    "rooms": {
+      "source": "Yaml",
+      "config": {
+        "path": "bundles/[BUNDLE]/areas/[AREA]/rooms.yml"
+      }
+    },
+    "quests": {
+      "source": "Yaml",
+      "config": {
+        "path": "bundles/[BUNDLE]/areas/[AREA]/quests.yml"
+      }
+    },
+    "help": {
+      "source": "YamlDirectory",
+      "config": {
+        "path": "bundles/[BUNDLE]/help"
+      }
+    },
+    "loot-pools": {
+      "source": "Yaml",
+      "config": {
+        "path": "bundles/[BUNDLE]/areas/[AREA]/loot-pools.yml"
+      }
+    }
+  },
+  "maxAccountNameLength": 20,
+  "minAccountNameLength": 3,
+  "maxPlayerNameLength": 20,
+  "minPlayerNameLength": 3,
+  "maxCharacters": 3,
+  "reportToAdmins": false,
+  "startingRoom": "newbie:starting",
+  "moveCommand": "move",
+  "skillLag": 2000,
+  "defaultMaxPlayerInventory": 16,
+  "maxIdleTime": 20
+}
