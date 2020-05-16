@@ -1,0 +1,4 @@
+title: "Шахтерское поселение"
+behaviors:
+  progressive-respawn:
+    interval: 340

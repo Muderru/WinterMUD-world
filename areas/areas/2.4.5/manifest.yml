@@ -1,0 +1,4 @@
+title: "Окрестности города"
+behaviors:
+  progressive-respawn:
+    interval: 666

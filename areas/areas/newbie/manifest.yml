@@ -1,0 +1,4 @@
+title: "Нора под деревом"
+behaviors:
+  progressive-respawn:
+    interval: 60
