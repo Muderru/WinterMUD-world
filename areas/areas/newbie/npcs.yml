@@ -19,6 +19,7 @@
   behaviors:
     allattributes: 0
     combat: true
+    area_decay: true
     aggro:
       delay: 1
       towards:

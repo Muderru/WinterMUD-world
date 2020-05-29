@@ -1,0 +1,4 @@
+title: "Театр"
+behaviors:
+  progressive-respawn:
+    interval: 900

@@ -164,8 +164,9 @@
       direction: восток
   doors:
     "limbo:ancientwayshrine":
-      lockedWith: false
+      locked: false
       closed: true
+      name: "люк"
 - id: locked
   title: "Закрытая комната"
   description: Эта комната ничем не примечательна, но чтобы попасть сюда, ее понадобится открыть ключом.

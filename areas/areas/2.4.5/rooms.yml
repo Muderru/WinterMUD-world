@@ -799,7 +799,7 @@
       direction: восток
   doors:
     "2.4.5:shop":
-      lockedWith: false
+      locked: false
       closed: true
 - id: store
   title: "Склад"
@@ -813,7 +813,7 @@
       direction: юг
   doors:
     "2.4.5:shop":
-      lockedWith: false
+      locked: false
       closed: true
 - id: sunalley1
   title: "Светлая аллея"

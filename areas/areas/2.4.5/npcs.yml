@@ -15,7 +15,7 @@
   attributes:
     health: 650
     strength: 22
-    armor: 2
+    armor: 20
     cutting_damage: 4
   behaviors:
     allattributes: 1
@@ -77,7 +77,7 @@
     health: 650
     strength: 20
     agility: 20
-    armor: 2
+    armor: 15
     cutting_damage: 3
   behaviors:
     allattributes: 1
@@ -112,7 +112,7 @@
     health: 1000
     mana: 1000
     strength: 34
-    armor: 4
+    armor: 65
     fire_damage: 6
     fire_resistance: 6
   behaviors:
@@ -152,7 +152,7 @@
   attributes:
     health: 800
     strength: 34
-    armor: 2
+    armor: 35
     cutting_damage: 4
     cutting_resistance: 4
   behaviors:
@@ -192,7 +192,7 @@
   attributes:
     health: 850
     strength: 34
-    armor: 2
+    armor: 40
     fire_damage: 5
     fire_resistance: 5
   behaviors:
@@ -229,6 +229,7 @@
     Мерзкая слизистая тварь, уставилась на вас не моргая.
   attributes:
     health: 550
+    armor: 15
     strength: 24
     acid_damage: 3
     acid_resistance: 3
@@ -257,7 +258,7 @@
   attributes:
     health: 850
     strength: 34
-    armor: 2
+    armor: 40
     cold_damage: 5
     cold_resistance: 5
   behaviors:
@@ -295,7 +296,7 @@
   attributes:
     health: 750
     strength: 34
-    armor: 2
+    armor: 35
     crushing_damage: 4
     crushing_resistance: 4
   behaviors:
@@ -334,7 +335,7 @@
   attributes:
     health: 750
     strength: 34
-    armor: 2
+    armor: 35
     piercing_damage: 3
     piercing_resistance: 1
   behaviors:
@@ -366,7 +367,7 @@
   attributes:
     health: 750
     strength: 34
-    armor: 2
+    armor: 35
     cutting_damage: 3
     cutting_resistance: 1
   behaviors:
@@ -401,7 +402,7 @@
   attributes:
     health: 750
     strength: 34
-    armor: 2
+    armor: 25
     cutting_damage: 3
     cutting_resistance: 1
   behaviors:
@@ -485,7 +486,7 @@
   attributes:
     health: 850
     strength: 34
-    armor: 2
+    armor: 35
     crushing_damage: 4
     crushing_resistance: 4
   behaviors:
@@ -523,7 +524,7 @@
   attributes:
     health: 850
     strength: 34
-    armor: 2
+    armor: 35
     cutting_damage: 4
     cutting_resistance: 1
   behaviors:
@@ -564,7 +565,7 @@
     health: 850
     mana: 650
     strength: 34
-    armor: 4
+    armor: 40
     chaos_damage: 4
     chaos_resistance: 1
   behaviors:
@@ -605,6 +606,7 @@
     Этот грызун настоящий великан.
   attributes:
     health: 850
+    armor: 10
     strength: 34
     crushing_damage: 4
     crushing_resistance: 4
@@ -666,7 +668,7 @@
     health: 850
     strength: 34
     earth_damage: 5
-    armor: 2
+    armor: 40
     cutting_resistance: 2
     crushing_resistance: 2
     piercing_resistance: 2
@@ -707,7 +709,7 @@
   attributes:
     health: 760
     strength: 34
-    armor: 4
+    armor: 20
     crushing_damage: 3
     crushing_resistance: 1
   behaviors:
@@ -747,7 +749,7 @@
   attributes:
     health: 720
     strength: 34
-    armor: 1
+    armor: 10
     cutting_damage: 3
     cutting_resistance: 1
   behaviors:
@@ -778,7 +780,7 @@
   attributes:
     health: 1000
     strength: 34
-    armor: 4
+    armor: 50
     acid_damage: 6
     acid_resistance: 6
   behaviors:
@@ -858,6 +860,7 @@
     посох.
   attributes:
     health: 800
+    armor: 15
     mana: 1000
     strength: 30
     agility: 30
@@ -922,6 +925,7 @@
   attributes:
     health: 800
     mana: 1000
+    armor: 15
     strength: 30
     agility: 30
     intellect: 30
@@ -980,7 +984,7 @@
     mana: 450
     strength: 34
     agility: 26
-    armor: 4
+    armor: 40
     earth_damage: 4
     earth_resistance: 1
   behaviors:
@@ -1029,7 +1033,7 @@
     mana: 650
     strength: 34
     agility: 26
-    armor: 4
+    armor: 35
     earth_damage: 4
     earth_resistance: 1
   behaviors:
@@ -1082,7 +1086,7 @@
     mana: 450
     strength: 34
     agility: 26
-    armor: 4
+    armor: 40
     earth_damage: 4
     earth_resistance: 1
   behaviors:
@@ -1125,7 +1129,7 @@
     mana: 450
     strength: 34
     agility: 26
-    armor: 4
+    armor: 40
     chaos_damage: 4
     chaos_resistance: 1
   behaviors:
@@ -1180,7 +1184,7 @@
     mana: 450
     strength: 34
     agility: 26
-    armor: 4
+    armor: 30
     piercing_damage: 4
     piercing_resistance: 1
   behaviors:
@@ -1219,7 +1223,7 @@
     mana: 450
     strength: 34
     agility: 26
-    armor: 4
+    armor: 20
     cutting_damage: 4
     cutting_resistance: 1
   behaviors:
@@ -1257,7 +1261,7 @@
     mana: 450
     strength: 34
     agility: 26
-    armor: 10
+    armor: 40
     detect_invisibility: 3
     detect_hide: 3
   behaviors:
