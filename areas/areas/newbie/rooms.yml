@@ -99,7 +99,6 @@
     городок Гурба. На юге же раскинулся темный лес.
   light: 80
   npcs: [ "newbie:captain" ]
-  script: "startquest"
   exits:
     - roomId: "newbie:tree"
       direction: север
