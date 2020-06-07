@@ -1,7 +1,5 @@
 'use strict';
 
-const { Broadcast } = require('ranvier');
-
 module.exports = {
     listeners: {
       take: state => function (player, item) {

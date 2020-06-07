@@ -40,8 +40,8 @@
   description: "Подозрительный тип, наверно ищет здесь какие-то сокровища."
   metadata:
     trainer:
-      skill: "judge"
-      cost: 1
+      skill: "daggers"
+      cost: 2
       requirements: []
 - id: rat
   keywords: ['крыса']
