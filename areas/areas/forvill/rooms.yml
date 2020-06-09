@@ -134,6 +134,7 @@
   script: 'alchemy'
   metadata:
     commands: [ 'заправить' ]
+    nomob: true
   items:
     - id: "forvill:70530"
       respawnChance: 100
