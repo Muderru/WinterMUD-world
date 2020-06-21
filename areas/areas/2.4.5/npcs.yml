@@ -647,6 +647,9 @@
         "2.4.5:rope":
           cost: 5
           currency: золото
+        "2.4.5:portable_box":
+          cost: 50
+          currency: золото
       enterMessage: "Лучшие товары со всего мира!"
       leaveMessage: "Заходите еще!"
 - id: stone_giant

@@ -402,6 +402,8 @@
   description: >-
     Трактирщик ловит каждое ваше слово, в надежде вам угодить.
   metadata:
+    innkeeper:
+      cost: 1000
     vendor:
       items:
         "forvill:70512":

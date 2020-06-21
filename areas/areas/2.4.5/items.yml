@@ -845,3 +845,23 @@
     sellable:
       value: 50
       currency: золото
+- id: portable_box
+  name: "переносной ящик"
+  rname: "переносного ящика"
+  dname: "переносному ящику"
+  vname: "переносной ящик"
+  tname: "переносным ящиком"
+  pname: "переносном ящике"
+  gender: "male"
+  type: CONTAINER
+  roomDesc: "Переносной ящик лежит тут."
+  keywords: [ "переносной", "ящик" ]
+  description: >-
+    Это небольшой ящичек, который можно взять с собой и положить внутрь
+    несколько вещей.
+  maxItems: 5
+  metadata:
+    quality: common
+    sellable:
+      value: 5
+      currency: золото

@@ -9,6 +9,5 @@ module.exports = {
         player.room.spawnNpc(state, 'newbie:bunny');
         player.removeItem(this);
       }
-
     }
 };
