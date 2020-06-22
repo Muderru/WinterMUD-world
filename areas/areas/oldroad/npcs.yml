@@ -856,6 +856,7 @@
   behaviors:
     allattributes: 3
     combat: true
+    area_decay: true
     aggro:
       delay: 1
       towards:
@@ -900,6 +901,7 @@
     invisibility: 0
   behaviors:
     allattributes: 3
+    area_decay: true
     combat: true
     aggro:
       delay: 0
@@ -946,6 +948,7 @@
   behaviors:
     allattributes: 3
     combat: true
+    area_decay: true
     aggro:
       delay: 1
       towards:
