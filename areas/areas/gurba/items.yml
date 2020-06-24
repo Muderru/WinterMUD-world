@@ -130,6 +130,7 @@
   pname: "валуне"
   gender: "male"  
   roomDesc: "Валун"
+  damageVerb: "огрел"
   description: >-
     Самый обычный серый камень.
   keywords: [ "валун" ]
@@ -204,6 +205,7 @@
   pname: "коротком мече"
   gender: "male"
   type: WEAPON
+  damageVerb: "рубанул"
   roomDesc: "Короткий меч"
   keywords: [ "меч", "короткий" ]
   description: "Самый обычный короткий меч, да еще и ржавый."
@@ -302,6 +304,7 @@
   pname: "изогнутом кинжале"
   gender: "male"  
   roomDesc: "Изогнутый кинжал"
+  damageVerb: "резанул"
   description: >-
     Самый обычный серый камень.
   keywords: [ "изогнутый", "кинжал" ]
@@ -429,6 +432,7 @@
   gender: "male"
   type: WEAPON
   roomDesc: "Меч часового"
+  damageVerb: "рубанул"
   keywords: [ "меч" ]
   description: "Это неплохой меч одного из стражников Гурбы."
   metadata:
@@ -505,6 +509,7 @@
   pname: "мече стражника"
   gender: "male"
   type: WEAPON
+  damageVerb: "рубанул"
   roomDesc: "Меч стражника"
   keywords: [ "меч" ]
   description: "Это неплохой меч одного из стражников Гурбы."
