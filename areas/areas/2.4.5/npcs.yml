@@ -719,10 +719,10 @@
     allattributes: 1
     combat: true
     aggro:
-      delay: 6
+      delay: 10
       towards:
         players: true
-        npcs: false   
+        npcs: false
     wander:
       interval: 20
       restrictTo: ['2.4.5:forest2', '2.4.5:clearing', '2.4.5:slope']
