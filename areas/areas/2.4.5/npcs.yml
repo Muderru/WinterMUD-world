@@ -719,7 +719,7 @@
     allattributes: 1
     combat: true
     aggro:
-      delay: 10
+      delay: 20
       towards:
         players: true
         npcs: false

@@ -229,7 +229,7 @@
           max: 35
       pools:
         - "gurba:ring": 10
-        - "gurba:stuff"        
+        - "gurba:stuff"
 - id: beggar
   keywords: [ "нищий" ]
   level: 8
@@ -586,3 +586,44 @@
       pools:
         - "gurba:guardiansword": 10
         - "gurba:stuff"
+- id: scrolltrader
+  keywords: ["торговец", "богус", "владелец"]
+  name: "Игнасиус"
+  rname: "Игнасиуса"
+  dname: "Игнасиусу"
+  vname: "Игнасиуса"
+  tname: "Игнасиусом"
+  pname: "Игнасиусе"
+  gender: "male"  
+  description: >-
+    Вы видите высокого худого старика с немного безумным взглядом.
+  level: 99
+  metadata:
+    vendor:
+      items:
+        "gurba:scroll_recall":
+          cost: 100
+          currency: золото
+        "gurba:scroll_fireball":
+          cost: 50
+          currency: золото
+        "gurba:scroll_acid":
+          cost: 100
+          currency: золото
+        "gurba:scroll_invisibility":
+          cost: 100
+          currency: золото
+        "gurba:scroll_light":
+          cost: 50
+          currency: золото
+        "gurba:scroll_lightning":
+          cost: 50
+          currency: золото
+        "gurba:scroll_paralysis":
+          cost: 250
+          currency: золото
+        "gurba:scroll_silence":
+          cost: 150
+          currency: золото
+      enterMessage: "Подходите! Покупайте великолепные товары!"
+      leaveMessage: "Возвращайтесь обратно!"
