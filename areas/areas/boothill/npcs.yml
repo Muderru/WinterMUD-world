@@ -8,13 +8,13 @@
   tname: "грязным маленьким кобольдом"
   pname: "грязном маленьком кобольде"
   gender: "male"
-  min_damage: 6
-  max_damage: 18
+  min_damage: 10
+  max_damage: 25
   description: >-
     Этот маленький грязный монстр явно к вам не дружелюбен. Он смотрит 
     на вас злобно и кажется выжидает удобного момента для нападения.
   attributes:
-    health: 150
+    health: 110
     strength: 12
     mana: 100
   behaviors:
@@ -46,8 +46,8 @@
   tname: "худым пьяницей"
   pname: "худом пьянице"
   gender: "male"
-  min_damage: 8
-  max_damage: 24
+  min_damage: 10
+  max_damage: 35
   damageVerb: 'огрел'
   travelVerbIn: "пришёл шатаясь"
   travelVerbOut: "ушёл шатаясь"
@@ -55,7 +55,7 @@
     Это несчастное существо почти не похоже на человека. А, может 
     он и не человек вовсе. У него налитые кровью глаза и трясущиеся руки.
   attributes:
-    health: 300
+    health: 200
     strength: 18
     mana: 150
   behaviors:
@@ -81,14 +81,14 @@
   tname: "пещерным пауком"
   pname: "пещерном пауке"
   gender: "male"
-  min_damage: 8
-  max_damage: 24
+  min_damage: 10
+  max_damage: 30
   damageVerb: 'укусил'
   description: >-
     Даже его самые маленькие собратья внушают многим людям страх, ну а эта метровая 
     тварь с полуметровыми хелицерами одним своим видом способна напугать до смерти.
   attributes:
-    health: 350
+    health: 220
     strength: 14
     acid_damage: 2
     mana: 150
@@ -107,7 +107,7 @@
           max: 15
       pools:
         - "limbo:potions"
-        - "limbo:junk"        
+        - "limbo:junk"
 - id: will
   keywords: ["торговец", "вилл", "владелец"]
   name: "торговец Вилл"
@@ -151,8 +151,8 @@
   tname: "пьяным дебоширом"
   pname: "пьяном дебошире"
   gender: "male"
-  min_damage: 8
-  max_damage: 24
+  min_damage: 10
+  max_damage: 35
   damageVerb: 'огрел'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -160,7 +160,7 @@
     Это несчастное существо почти не похоже на человека. А, может 
     он и не человек вовсе. У него налитые кровью глаза и трясущиеся руки.
   attributes:
-    health: 300
+    health: 200
     strength: 18
     mana: 150
   behaviors:
@@ -170,7 +170,7 @@
       delay: 2
       towards:
         players: true
-        npcs: true    
+        npcs: true
     wander:
       interval: 20
       areaRestricted: true
@@ -191,16 +191,16 @@
   tname: "старым стражником"
   pname: "старом стражнике"
   gender: "male"
-  min_damage: 9
-  max_damage: 29
+  min_damage: 15
+  max_damage: 40
   damageVerb: 'рубанул'
   description: >-
     Этот преклонного вида старец закален в многочисленных боях. Хотя он
     уже не так силен, как в молодости, недооценивать его точно не стоит.
   attributes:
-    health: 400
+    health: 250
     strength: 25
-    armor: 2
+    armor: 1
     mana: 150
   behaviors:
     allattributes: 0
@@ -225,16 +225,16 @@
   tname: "стражником-тюремщиком"
   pname: "стражнике-тюремщике"
   gender: "male"
-  min_damage: 9
-  max_damage: 29
+  min_damage: 15
+  max_damage: 35
   damageVerb: 'рубанул'
   description: >-
     Вы видите немолодого мужчину, с тяжелым взглядом. Он хорошо
     вооружен и способен постоять за себя. Других охранять тюрьму не берут.
   attributes:
-    health: 400
+    health: 300
     strength: 25
-    armor: 2
+    armor: 1
     mana: 150
   behaviors:
     allattributes: 0

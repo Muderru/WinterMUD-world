@@ -8,8 +8,8 @@
   tname: "скучающим билетером"
   pname: "скучающем билетере"
   gender: "male"
-  min_damage: 35
-  max_damage: 135
+  min_damage: 45
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -20,13 +20,13 @@
     приносить те жалкие крохи, что ему платят за эту работу.
   script: 'ticketer'
   attributes:
-    health: 1300
+    health: 950
     mana: 800
     strength: 30
     agility: 25
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 2
     cutting_resistance: 3
     crushing_resistance: 3
@@ -37,7 +37,7 @@
     health_regeneration: 10
     mana_regeneration: 10
   behaviors:
-    allattributes: 1
+    allattributes: 2
     combat: true
     assist: true
     memory: true
@@ -62,8 +62,8 @@
   tname: "человеком из очереди"
   pname: "человеке из очереди"
   gender: "male"
-  min_damage: 35
-  max_damage: 135
+  min_damage: 45
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -72,13 +72,13 @@
     кто-то пытается встать впереди него, мотивируя это тем, что для него занимали. Он не пропустит никого
     вперед себя, если только тут не было занято.
   attributes:
-    health: 1300
+    health: 950
     mana: 800
     strength: 30
     agility: 25
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 2
     cutting_resistance: 3
     crushing_resistance: 3
@@ -113,7 +113,7 @@
   pname: "щуплом контролере"
   gender: "male"
   min_damage: 50
-  max_damage: 150
+  max_damage: 85
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -123,13 +123,13 @@
     отпугнуть посетителей.
   script: "ticket"
   attributes:
-    health: 2000
-    mana: 1000
+    health: 1000
+    mana: 600
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 50
+    armor: 6
     critical: 2
     cutting_resistance: 3
     crushing_resistance: 3
@@ -167,7 +167,7 @@
   pname: "уборщике"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'огрел'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -175,13 +175,13 @@
     Этот человек уже давно забыл свои молодые годы, все, что остается ему теперь, это покрепче сжимать
     свою мокрую швабру и усиленно натирать ею пол, пока в нем не станут отчетливо видны отражения.
   attributes:
-    health: 1500
+    health: 900
     mana: 500
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 2
     cutting_resistance: 3
     crushing_resistance: 3
@@ -221,7 +221,7 @@
   pname: "влюбленном парне"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -229,13 +229,13 @@
     Вы видите симпатичного молодого человека, глаза которого так и светятся от счастья. В будущем 
     он может осчастливить какую-нибудь девушку и подарить ей пару замечательных детишек.
   attributes:
-    health: 1500
+    health: 950
     mana: 500
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -270,7 +270,7 @@
   pname: "молодой девушке"
   gender: "female"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'пнула'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
@@ -278,13 +278,13 @@
     Эта молодая девушка так и цветет от счастья, она так приветливо улыбается окружающим, что даже
     у самого черствого сухаря размягчается сердце, и он невольно начинает улыбаться в ответ.
   attributes:
-    health: 1000
-    mana: 1000
+    health: 900
+    mana: 800
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 25
+    armor: 4
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -321,7 +321,7 @@
   pname: "пожилой даме"
   gender: "female"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударила'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
@@ -331,13 +331,13 @@
     можно легко представить, что в молодости она вскружила головы многим парням. Те годы давно прошли, и 
     теперь ее сопровождает лишь маленькая собачонка.
   attributes:
-    health: 1000
-    mana: 1000
+    health: 900
+    mana: 800
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 25
+    armor: 4
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -380,20 +380,20 @@
   pname: "маленькой собачке"
   gender: "female"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'укусила'
   travelVerbIn: "прибежала"
   travelVerbOut: "убежала"
   description: >-
     Вы видите одну из тех мерзких собачонок, что так любят держать у себя одинокие старухи.
   attributes:
-    health: 1300
-    mana: 800
+    health: 900
+    mana: 700
     strength: 20
     agility: 35
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -428,7 +428,7 @@
   pname: "ценителе искусства"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'огрел'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -436,13 +436,13 @@
     Этот человек с нетерпением всматривается на сцену, ожидая начала представления. Он одет в потертый 
     камзол и длинные башмаки с медной пряжкой.
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -481,20 +481,20 @@
   pname: "суфлере"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'пнул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Приготовившийся подсказывать слова актерам суфлер стоит тут со сценарием.
   attributes:
-    health: 1400
+    health: 900
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -531,20 +531,20 @@
   pname: "актере"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Репетирующий свою роль перед началом представления актер расхаживает по сцене.
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -580,8 +580,8 @@
   tname: "дирижером оркестра"
   pname: "дирижере оркестра"
   gender: "male"
-  min_damage: 45
-  max_damage: 145
+  min_damage: 35
+  max_damage: 90
   damageVerb: 'огрел'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -590,13 +590,13 @@
     перед оркестром. Но, несмотря на хорошую физическую форму, взгляд у дирижера осмысленный и 
     светится интеллектом.
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -634,20 +634,20 @@
   pname: "невысоком скрипаче"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Невысокий скрипач проверяет свой инструмент перед игрой.
   attributes:
-    health: 1400
+    health: 900
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -684,20 +684,20 @@
   pname: "полной виолончелистке"
   gender: "female"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ткнула'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
   description: >-
     После встречи с этой крикливо одетой барышней еще долго остаешься в легком шоке.
   attributes:
-    health: 1000
-    mana: 1000
+    health: 900
+    mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 25
+    armor: 4
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -734,7 +734,7 @@
   pname: "кукловоде"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -742,13 +742,13 @@
     Вы видите человека средних лет с задумчивыми глазами и умелыми руками. За свою долгую 
     сценическую жизнь он повидал немало, и уже ничто не застанет его врасплох.
   attributes:
-    health: 1400
-    mana: 700
+    health: 900
+    mana: 600
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -784,8 +784,8 @@
   tname: "марионеткой"
   pname: "марионетке"
   gender: "female"
-  min_damage: 45
-  max_damage: 145
+  min_damage: 15
+  max_damage: 30
   damageVerb: 'сокрушила'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
@@ -793,13 +793,13 @@
     Эта неказистая кукла лишь отдаленно напоминает человека; у нее грубое лицо и неуклюжие конечности, 
     управляемые за нити кукловодом.
   attributes:
-    health: 1000
-    mana: 1000
+    health: 800
+    mana: 800
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 25
+    armor: 100
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -836,7 +836,7 @@
   pname: "приме театра"
   gender: "female"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'хлестнула'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
@@ -847,13 +847,13 @@
     одутловатой фигуре, можно предположить, что прима не равнодушна к сладостям.
   script: 'sweets'
   attributes:
-    health: 1000
-    mana: 1000
+    health: 900
+    mana: 600
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 30
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -892,7 +892,7 @@
   pname: "прогуливающемся зрителе"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -900,13 +900,13 @@
     Судя по спешке, этот человек решил посетить во время антракта буфет, он надеется прийти туда, 
     пока очередь не станет слишком длинной.
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -946,20 +946,20 @@
   pname: "загримированном актере"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'пырнул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Загримированный под злодея актер задумчиво смотрит в потолок.
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 4
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -996,20 +996,20 @@
   pname: "молоденькой актрисе"
   gender: "female"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'хлестнула'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
   description: >-
     Молоденькая актриса около столика игриво подмигивает окружающим.
   attributes:
-    health: 1000
-    mana: 1000
+    health: 900
+    mana: 800
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 25
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1046,7 +1046,7 @@
   pname: "строгой секретарше"
   gender: "female"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'хлестнула'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
@@ -1056,13 +1056,13 @@
     один десяток людей. Даже если вы пришли к директору <bold>по делу</bold>, она ни за что не пропустит
     вас к нему.
   attributes:
-    health: 1100
-    mana: 1000
+    health: 900
+    mana: 600
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 30
+    armor: 4
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1100,7 +1100,7 @@
   pname: "рассерженном посетителе"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1109,13 +1109,13 @@
     который час туда не пропускает злая секретарша. Еще чуть-чуть, и они ввяжутся в потасовку.
   script: 'killsecret'
   attributes:
-    health: 1400
-    mana: 700
+    health: 900
+    mana: 600
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1149,20 +1149,20 @@
   pname: "директоре театра"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'пнул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Взбешенный прерванным отдыхом директор театра нервно разгуливает по своему кабинету.
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1190,7 +1190,7 @@
         - "theater:47717": 25
 - id: 47723
   keywords: [ "призрак" ]
-  level: 22
+  level: 24
   name: "призрак погибшего актера"
   rname: "призрака погибшего актера"
   dname: "призраку погибшего актера"
@@ -1199,20 +1199,20 @@
   pname: "призраке погибшего актера"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'иссушил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Призрак погибшего прямо на сцене актера слабо флуоресцирует тут.
   attributes:
-    health: 1400
-    mana: 1000
+    health: 950
+    mana: 600
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 80
+    armor: 8
     critical: 4
     cutting_resistance: 4
     crushing_resistance: 4
@@ -1249,7 +1249,7 @@
   pname: "влиятельном аристократе"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'пнул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1257,13 +1257,13 @@
     Как бы вы ни пытались привлечь внимание этого человека, он продолжает старательно не замечать
     вас. Вероятно, чернь для него и вовсе не существует. Вид аристократа выражает спесь и высокомерие.
   attributes:
-    health: 1400
+    health: 900
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1300,20 +1300,20 @@
   pname: "овдовевшей баронессе"
   gender: "female"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'оцарапала'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
   description: >-
     Овдовевшая баронесса лениво помахивает здесь своим веером.
   attributes:
-    health: 1400
+    health: 900
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 4
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1352,20 +1352,20 @@
   pname: "хмуром телохранителе"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Здоровый хмурый телохранитель с угрозой поглядывает на проходящих мимо.
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1402,7 +1402,7 @@
   pname: "преданном фанате"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1410,13 +1410,13 @@
     Преданный фанат примы театра с нетерпением наблюдает тут за сценой.
   script: 'card'
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1456,7 +1456,7 @@
   pname: "главном режиссере"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1466,13 +1466,13 @@
   script: 'quest1'
   quests: [ 'theater:47701' ]
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1507,7 +1507,7 @@
   pname: "симпатичной продавщице"
   gender: "female"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударила'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
@@ -1532,20 +1532,20 @@
   pname: "призраке оперы"
   gender: "male"
   min_damage: 50
-  max_damage: 150
+  max_damage: 85
   damageVerb: 'резанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Зловещий призрак оперы отдыхает здесь после своих злодеяний.
   attributes:
-    health: 2400
-    mana: 1200
+    health: 1000
+    mana: 900
     strength: 30
     agility: 30
     intellect: 25
     stamina: 30
-    armor: 60
+    armor: 6
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1587,7 +1587,7 @@
   pname: "разъяренном зрителе"
   gender: "male"
   min_damage: 40
-  max_damage: 140
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1595,13 +1595,13 @@
     Пунцово-красный от негодования, разъяренный зритель ищет, на ком бы сорвать свою злость.
   script: 'haltura'
   attributes:
-    health: 1400
+    health: 900
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1639,7 +1639,7 @@
   pname: "продавце семечек"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1647,13 +1647,13 @@
     Этот полный человек с трудом протискивается мимо скамей по узким проходам. При этом его продвижение 
     сопровождается проклятиями и руганью, на которые он, впрочем, не обращает никакого внимания.
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1692,7 +1692,7 @@
   pname: "главном актере"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1701,13 +1701,13 @@
     начать, это отсутствие напарника.
   script: 'role1'
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1741,7 +1741,7 @@
   pname: "человеке из очереди"
   gender: "male"
   min_damage: 35
-  max_damage: 135
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1749,13 +1749,13 @@
     Этот человек стоит в очереди уже давно, не продвинувшись сколько-нибудь ощутимо вперед. То и дело
     кто-то пытается встать впереди него, мотивируя это тем, что для него занимали.
   attributes:
-    health: 1300
+    health: 900
     mana: 800
     strength: 30
     agility: 25
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 2
     cutting_resistance: 3
     crushing_resistance: 3
@@ -1791,7 +1791,7 @@
   pname: "приме театра"
   gender: "female"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'хлестнула'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
@@ -1801,13 +1801,13 @@
     Большинство ее посетителей готовы на все, лишь бы заполучить ее автограф. Также, по ее 
     одутловатой фигуре, можно предположить, что прима не равнодушна к сладостям.
   attributes:
-    health: 1000
-    mana: 1000
+    health: 900
+    mana: 800
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 25
+    armor: 4
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1845,20 +1845,20 @@
   pname: "преданном фанате"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Преданный фанат примы театра с нетерпением наблюдает тут за сценой.
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1897,7 +1897,7 @@
   pname: "главном актере"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1906,13 +1906,13 @@
     начать, это отсутствие напарника.
   script: 'role2'
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1947,7 +1947,7 @@
   pname: "главном актере"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1956,13 +1956,13 @@
     начать, это отсутствие напарника.
   script: 'role3'
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -1997,7 +1997,7 @@
   pname: "главном актере"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -2006,13 +2006,13 @@
     начать, это отсутствие напарника.
   script: 'role4'
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2
@@ -2047,7 +2047,7 @@
   pname: "главном актере"
   gender: "male"
   min_damage: 45
-  max_damage: 145
+  max_damage: 80
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -2055,13 +2055,13 @@
     Этот актер загримировался и уже полностью готов к началу представления, единственное, что ему мешает 
     начать, это отсутствие напарника.
   attributes:
-    health: 1400
+    health: 950
     mana: 700
     strength: 30
     agility: 30
     intellect: 25
     stamina: 25
-    armor: 40
+    armor: 5
     critical: 4
     cutting_resistance: 2
     crushing_resistance: 2

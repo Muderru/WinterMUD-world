@@ -9,13 +9,13 @@
   pname: "охраннике банка"
   gender: "male"
   min_damage: 19
-  max_damage: 67
+  max_damage: 61
   description: >-
     Большой и грузный мужик, готовый навалять любому.
   attributes:
-    health: 650
+    health: 500
     strength: 22
-    armor: 20
+    armor: 2
     cutting_damage: 4
   behaviors:
     allattributes: 1
@@ -66,18 +66,18 @@
   tname: "грязным нищим"
   pname: "грязном нищем"
   gender: "male"
-  min_damage: 13
-  max_damage: 49
+  min_damage: 20
+  max_damage: 45
   damageVerb: 'ударил'
   travelVerbIn: "приковылял"
   travelVerbOut: "уковылял"
   description: >-
     Этот старик уже несколько лет не мылся и от него очень сильно воняет.
   attributes:
-    health: 650
+    health: 370
     strength: 20
     agility: 20
-    armor: 15
+    armor: 2
     cutting_damage: 3
   behaviors:
     allattributes: 1
@@ -102,17 +102,17 @@
   tname: "молодым драконом"
   pname: "молодом драконе"
   gender: "male"
-  min_damage: 31
-  max_damage: 107
+  min_damage: 45
+  max_damage: 80
   damageVerb: 'опалил'
   description: >-
     Даже его самые маленькие собратья внушают многим людям страх, ну а эта метровая 
     тварь с полуметровыми хелицерами одним своим видом способна напугать до смерти.
   attributes:
-    health: 1000
-    mana: 1000
+    health: 900
+    mana: 800
     strength: 34
-    armor: 65
+    armor: 4
     fire_damage: 6
     fire_resistance: 6
   behaviors:
@@ -142,17 +142,17 @@
   tname: "коренастым дварфом"
   pname: "коренастом дварфе"
   gender: "male"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 35
+  max_damage: 65
   damageVerb: 'огрел'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Хотя дварф невелик, но очень плотно сложен. В силе он не уступит человеку.
   attributes:
-    health: 800
+    health: 650
     strength: 34
-    armor: 35
+    armor: 3
     cutting_damage: 4
     cutting_resistance: 4
   behaviors:
@@ -184,15 +184,15 @@
   tname: "огненным великаном"
   pname: "огненном великане"
   gender: "male"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 20
+  max_damage: 80
   damageVerb: 'огрел'
   description: >-
     Представьте великана, облитого маслом и подожженного. Он ну очень зол.
   attributes:
-    health: 850
+    health: 650
     strength: 34
-    armor: 40
+    armor: 3
     fire_damage: 5
     fire_resistance: 5
   behaviors:
@@ -228,8 +228,8 @@
   description: >-
     Мерзкая слизистая тварь, уставилась на вас не моргая.
   attributes:
-    health: 550
-    armor: 15
+    health: 400
+    armor: 2
     strength: 24
     acid_damage: 3
     acid_resistance: 3
@@ -250,15 +250,15 @@
   tname: "ледяным великаном"
   pname: "ледяном великане"
   gender: "male"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 20
+  max_damage: 80
   damageVerb: 'сокрушил'
   description: >-
     Огромная гора льда движется к вам, испуская волны холода и ненависти.
   attributes:
-    health: 850
+    health: 650
     strength: 34
-    armor: 40
+    armor: 3
     cold_damage: 5
     cold_resistance: 5
   behaviors:
@@ -288,15 +288,15 @@
   tname: "великаном"
   pname: "великане"
   gender: "male"
-  min_damage: 23
-  max_damage: 79
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'пнул'
   description: >-
     Огромный человекоподобный монстр, который способен растоптать вас в одно мгновение.
   attributes:
-    health: 750
+    health: 600
     strength: 34
-    armor: 35
+    armor: 3
     crushing_damage: 4
     crushing_resistance: 4
   behaviors:
@@ -325,17 +325,17 @@
   tname: "игроком"
   pname: "игроке"
   gender: "male"
-  min_damage: 23
-  max_damage: 79
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'пырнул'
   description: >-
     Вы видите сидящего перед доской человека, размышляющего над игрой. 
     Кажется, сейчас ему не помешает помощь и почему бы не предложить
     ему сыграть одну игру?
   attributes:
-    health: 750
+    health: 600
     strength: 34
-    armor: 35
+    armor: 3
     piercing_damage: 3
     piercing_resistance: 1
   behaviors:
@@ -359,15 +359,15 @@
   tname: "надоедливым Гарри"
   pname: "надоедливом Гарри"
   gender: "male"
-  min_damage: 23
-  max_damage: 79
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'ударил'
   description: >-
     Очень любопытный молодой человек. Наблюдает за вами не отрываясь.
   attributes:
-    health: 750
+    health: 600
     strength: 34
-    armor: 35
+    armor: 3
     cutting_damage: 3
     cutting_resistance: 1
   behaviors:
@@ -394,15 +394,15 @@
   tname: "хобгоблином"
   pname: "хобгоблине"
   gender: "male"
-  min_damage: 21
-  max_damage: 73
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'резанул'
   description: >-
     Этот хобгоблин выглядит очень мерзко и наверняка у него скверный характер.
   attributes:
-    health: 750
+    health: 550
     strength: 34
-    armor: 25
+    armor: 2
     cutting_damage: 3
     cutting_resistance: 1
   behaviors:
@@ -478,15 +478,15 @@
   tname: "осьминогом"
   pname: "осьминоге"
   gender: "male"
-  min_damage: 23
-  max_damage: 79
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'хлестнул'
   description: >-
     Вы видите огромного осьминога с длинными и цепкими щупальцами.
   attributes:
-    health: 850
+    health: 600
     strength: 34
-    armor: 35
+    armor: 3
     crushing_damage: 4
     crushing_resistance: 4
   behaviors:
@@ -516,15 +516,15 @@
   tname: "орком"
   pname: "орке"
   gender: "male"
-  min_damage: 23
-  max_damage: 79
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'рубанул'
   description: >-
     Это грязный и вонючий орк.
   attributes:
     health: 850
     strength: 34
-    armor: 35
+    armor: 3
     cutting_damage: 4
     cutting_resistance: 1
   behaviors:
@@ -556,16 +556,16 @@
   tname: "шаманом орков"
   pname: "шамане орков"
   gender: "male"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 35
+  max_damage: 65
   damageVerb: 'поразил магией'
   description: >-
     Вы видите уродливого шамана орков. Он намного шире обычных орков.
   attributes:
-    health: 850
+    health: 650
     mana: 650
     strength: 34
-    armor: 40
+    armor: 3
     chaos_damage: 4
     chaos_resistance: 1
   behaviors:
@@ -605,8 +605,8 @@
   description: >-
     Этот грызун настоящий великан.
   attributes:
-    health: 850
-    armor: 10
+    health: 400
+    armor: 2
     strength: 34
     crushing_damage: 4
     crushing_resistance: 4
@@ -662,16 +662,16 @@
   tname: "каменным гигантом"
   pname: "каменном гиганте"
   gender: "male"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 20
+  max_damage: 60
   damageVerb: 'истоптал'
   description: >-
     Вы видите огромную человекоподобную фигуру из отполированного камня.
   attributes:
-    health: 850
+    health: 700
     strength: 34
     earth_damage: 5
-    armor: 40
+    armor: 3
     cutting_resistance: 2
     crushing_resistance: 2
     piercing_resistance: 2
@@ -702,17 +702,17 @@
   tname: "троллем"
   pname: "тролле"
   gender: "male"
-  min_damage: 19
-  max_damage: 67
+  min_damage: 25
+  max_damage: 55
   damageVerb: 'огрел'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Этот тролль выглядит как гнилое дерево.
   attributes:
-    health: 760
+    health: 500
     strength: 34
-    armor: 20
+    armor: 3
     crushing_damage: 3
     crushing_resistance: 1
   behaviors:
@@ -744,15 +744,15 @@
   tname: "серым волком"
   pname: "сером волке"
   gender: "male"
-  min_damage: 17
-  max_damage: 61
+  min_damage: 25
+  max_damage: 50
   damageVerb: 'укусил'
   description: >-
     Вы видите серого волка, бегущего недалеко от вас. У него затравленный взгляд, но огромные клыки.
   attributes:
-    health: 720
+    health: 450
     strength: 34
-    armor: 10
+    armor: 2
     cutting_damage: 3
     cutting_resistance: 1
   behaviors:
@@ -775,20 +775,24 @@
   tname: "костяным драконом"
   pname: "костяном драконе"
   gender: "male"
-  min_damage: 31
-  max_damage: 107
+  min_damage: 45
+  max_damage: 80
   damageVerb: 'обжег кислотой'
   description: >-
     Это огромный дракон-нежить, созданный магом Арканартоном в своих безумных экспериментах.
   attributes:
-    health: 1000
+    health: 900
+    mana: 500
     strength: 34
-    armor: 50
+    armor: 4
     acid_damage: 6
     acid_resistance: 6
   behaviors:
     allattributes: 3
     combat: true
+    capable:
+      skills: [ ]
+      spells: [ 'acid' ]
     aggro:
       delay: 1
       towards:
@@ -862,9 +866,9 @@
     На голове его широкополая шляпа, а в руке он сжимает сучковатый
     посох.
   attributes:
-    health: 800
-    armor: 15
-    mana: 1000
+    health: 550
+    armor: 2
+    mana: 600
     strength: 30
     agility: 30
     intellect: 30
@@ -917,8 +921,8 @@
   tname: "скрывающимся вором"
   pname: "скрывающемся воре"
   gender: "male"
-  min_damage: 20
-  max_damage: 70
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'пырнул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -926,9 +930,9 @@
     Это беглый преступник, скрывающийся в этих катакомбах.
     Он не кажется опасным, быть может он спятил от одиночества.
   attributes:
-    health: 800
-    mana: 1000
-    armor: 15
+    health: 550
+    mana: 400
+    armor: 2
     strength: 30
     agility: 30
     intellect: 30
@@ -977,17 +981,17 @@
   pname: "гнилом древне"
   gender: "male"
   min_damage: 25
-  max_damage: 85
+  max_damage: 65
   damageVerb: 'хлестнул'
   description: >-
     Эта обезображенная фигура напоминает одновременно и человека и дерево.
     Это все, что осталось от дриад - бывших хранителей этого леса.
   attributes:
-    health: 850
-    mana: 450
+    health: 600
+    mana: 350
     strength: 34
     agility: 26
-    armor: 40
+    armor: 3
     earth_damage: 4
     earth_resistance: 1
   behaviors:
@@ -1025,18 +1029,18 @@
   pname: "древнем древне"
   gender: "male"
   min_damage: 25
-  max_damage: 85
+  max_damage: 60
   damageVerb: 'огрел'
   description: >-
     Эта обезображенная фигура напоминает одновременно и человека и дерево.
     Это все, что осталось от дриад - бывших хранителей этого леса. Этот
     древень в полтора раза больше своих собратьев.
   attributes:
-    health: 850
-    mana: 650
+    health: 550
+    mana: 350
     strength: 34
     agility: 26
-    armor: 35
+    armor: 3
     earth_damage: 4
     earth_resistance: 1
   behaviors:
@@ -1079,17 +1083,17 @@
   pname: "гнилом древне"
   gender: "male"
   min_damage: 25
-  max_damage: 85
+  max_damage: 60
   damageVerb: 'хлестнул'
   description: >-
     Эта обезображенная фигура напоминает одновременно и человека и дерево.
     Это все, что осталось от дриад - бывших хранителей этого леса.
   attributes:
-    health: 850
-    mana: 450
+    health: 500
+    mana: 350
     strength: 34
     agility: 26
-    armor: 40
+    armor: 3
     earth_damage: 4
     earth_resistance: 1
   behaviors:
@@ -1121,18 +1125,18 @@
   tname: "демоном Лунного озера"
   pname: "демоне Лунного озера"
   gender: "male"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 35
+  max_damage: 65
   damageVerb: 'оцарапал'
   description: >-
     Эта уродливая рогатая фигура внушает ужас и отвращение. Призванному
     из самих глубин ада демону - не место в этом мире.
   attributes:
-    health: 850
+    health: 650
     mana: 450
     strength: 34
     agility: 26
-    armor: 40
+    armor: 3
     chaos_damage: 4
     chaos_resistance: 1
   behaviors:
@@ -1175,19 +1179,19 @@
   tname: "скальным наездником"
   pname: "скальном наезднике"
   gender: "male"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 35
+  max_damage: 65
   damageVerb: 'клюнул'
   description: >-
     Вы видите огромную полуптицу-полуящера, угрожающе щелкающую
     зубастым клювом в вашу сторону. Очевидно, что скальный наездник
     пытается отогнать вас от своего гнезда.
   attributes:
-    health: 900
-    mana: 450
+    health: 600
+    mana: 350
     strength: 34
     agility: 26
-    armor: 30
+    armor: 3
     piercing_damage: 4
     piercing_resistance: 1
   behaviors:
@@ -1216,17 +1220,17 @@
   tname: "детёнышем скального наездника"
   pname: "детёныше скального наездника"
   gender: "male"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'оцарапал'
   description: >-
     Это птенец скального наездника - огромной и агрессивной полуптицы-полуящера.
   attributes:
-    health: 700
+    health: 450
     mana: 450
     strength: 34
     agility: 26
-    armor: 20
+    armor: 3
     cutting_damage: 4
     cutting_resistance: 1
   behaviors:
@@ -1254,17 +1258,17 @@
   tname: "серая тень"
   pname: "серая тень"
   gender: "female"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 35
+  max_damage: 60
   damageVerb: 'опустошила'
   description: >-
     Вы видите неясную фигуру, сотканную из тени и тумана.
   attributes:
-    health: 900
+    health: 650
     mana: 450
     strength: 34
     agility: 26
-    armor: 40
+    armor: 3
     detect_invisibility: 3
     detect_hide: 3
   behaviors:

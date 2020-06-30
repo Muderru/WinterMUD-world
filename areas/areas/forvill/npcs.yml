@@ -8,7 +8,7 @@
   tname: "лесорубом"
   pname: "лесорубе"
   gender: "male"
-  min_damage: 10
+  min_damage: 15
   max_damage: 45
   damageVerb: 'рубанул'
   travelVerbIn: "пришёл"
@@ -18,7 +18,7 @@
     лесоруб сильно устал, он в любой момент сможет с помощью своего большого топора 
     дать отпор любому врагу.
   attributes:
-    health: 800
+    health: 330
     mana: 250
     strength: 25
     agility: 25
@@ -26,7 +26,7 @@
     stamina: 20
     critical: 2
     crushing_resistance: 2
-    armor: 10
+    armor: 1
   behaviors:
     allattributes: 1
     combat: true
@@ -54,8 +54,8 @@
   tname: "чумазым подростком"
   pname: "чумазом подростке"
   gender: "male"
-  min_damage: 10
-  max_damage: 35
+  min_damage: 15
+  max_damage: 40
   damageVerb: 'ударил'
   travelVerbIn: "прибежал"
   travelVerbOut: "убежал"
@@ -63,7 +63,7 @@
     Чумазый подросток бегает вокруг вас, странно придуриваясь. Понаблюдав за ним 
     пару минут, у вас разболелись глаза и вы решили как можно скорее отвязаться от него.
   attributes:
-    health: 600
+    health: 250
     mana: 200
     strength: 20
     agility: 20
@@ -71,7 +71,7 @@
     stamina: 25
     cutting_resistance: 2
     crushing_damage: 2
-    armor: 8
+    armor: 1
   behaviors:
     allattributes: 0
     combat: true
@@ -100,23 +100,23 @@
   tname: "чумазой девушкой"
   pname: "чумазой девушке"
   gender: "female"
-  min_damage: 10
-  max_damage: 35
+  min_damage: 15
+  max_damage: 40
   damageVerb: 'пнула'
   travelVerbIn: "прибежала"
   travelVerbOut: "убежала"
   description: >-
     Вы видите ничем не примечательную девочку лет шестнадцати. Она бегает вокруг вас, резвясь и играя.
   attributes:
-    health: 400
-    mana: 400
+    health: 250
+    mana: 200
     strength: 20
     agility: 20
     intellect: 20
     stamina: 20
     cold_resistance: 2
     earth_damage: 2
-    armor: 8
+    armor: 1
   behaviors:
     allattributes: 0
     combat: true
@@ -145,8 +145,8 @@
   tname: "молчаливым лесорубом"
   pname: "молчаливом лесорубе"
   gender: "male"
-  min_damage: 15
-  max_damage: 55
+  min_damage: 25
+  max_damage: 45
   damageVerb: 'рубанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -155,7 +155,7 @@
     лесоруб сильно устал, он в любой момент сможет с помощью своего большого топора 
     дать отпор любому врагу.
   attributes:
-    health: 1000
+    health: 400
     mana: 280
     strength: 25
     agility: 25
@@ -163,7 +163,7 @@
     stamina: 25
     critical: 3
     crushing_resistance: 2
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 1
     combat: true
@@ -188,23 +188,23 @@
   tname: "женой лесоруба"
   pname: "жене лесоруба"
   gender: "female"
-  min_damage: 12
-  max_damage: 44
+  min_damage: 15
+  max_damage: 45
   damageVerb: 'хлестнула'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
   description: >-
     Жена лесоруба хлопочет тут по хозяйству.
   attributes:
-    health: 600
-    mana: 400
+    health: 300
+    mana: 200
     strength: 20
     agility: 20
     intellect: 25
     stamina: 20
     cold_resistance: 2
     lightning_damage: 2
-    armor: 10
+    armor: 1
   behaviors:
     allattributes: 0
     combat: true
@@ -237,15 +237,15 @@
     Древняя как мир ведьма, да еще и со здоровенной бородавкой на носу.
   script: 'witch'
   attributes:
-    health: 700
-    mana: 600
+    health: 450
+    mana: 400
     strength: 20
     agility: 20
     intellect: 30
     stamina: 20
     acid_resistance: 2
     acid_damage: 2
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 0
     combat: true
@@ -303,15 +303,15 @@
     на другую, словно пытаясь определить где у вас спрятан кошелек.
   script: 'trader'
   attributes:
-    health: 950
-    mana: 350
+    health: 400
+    mana: 250
     strength: 25
     agility: 25
     intellect: 10
     stamina: 25
     critical: 3
     crushing_resistance: 2
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 1
     combat: true
@@ -348,15 +348,15 @@
   tname: "чудаковатым гномом"
   pname: "чудаковатом гноме"
   gender: "male"
-  min_damage: 15
-  max_damage: 55
+  min_damage: 25
+  max_damage: 45
   damageVerb: 'рубанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Вы видите полного, измазанного маслом гнома, с большим моноклем в левом глазу.
   attributes:
-    health: 1000
+    health: 400
     mana: 300
     strength: 25
     agility: 25
@@ -364,7 +364,7 @@
     stamina: 25
     cutting_damage: 3
     crushing_resistance: 2
-    armor: 15
+    armor: 2
   metadata:
     trainer:
       skill: 'heavy_armor'
@@ -432,15 +432,15 @@
   description: >-
     Подвыпивший лесоруб сидит тут за столиком.
   attributes:
-    health: 700
-    mana: 300
+    health: 350
+    mana: 200
     strength: 25
     agility: 25
     intellect: 10
     stamina: 20
     critical: 2
     crushing_resistance: 2
-    armor: 10
+    armor: 1
   behaviors:
     allattributes: 1
     combat: true
@@ -472,15 +472,15 @@
     Вы видите пожилого человека, которому стало уже слишком тяжело охотиться, поэтому он 
     выбрал проффесию торговца.
   attributes:
-    health: 900
-    mana: 400
+    health: 450
+    mana: 200
     strength: 25
     agility: 25
     intellect: 20
     stamina: 25
     piercing_damage: 3
     piercing_resistance: 2
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 1
     combat: true
@@ -520,8 +520,8 @@
   tname: "стариком Ролли"
   pname: "старике Ролли"
   gender: "male"
-  min_damage: 15
-  max_damage: 55
+  min_damage: 25
+  max_damage: 45
   damageVerb: 'огрел'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -529,15 +529,15 @@
     Старик Ролли торгует тут старым оружием.
   script: 'rolli'
   attributes:
-    health: 900
-    mana: 400
+    health: 400
+    mana: 200
     strength: 25
     agility: 25
     intellect: 20
     stamina: 25
     crushing_damage: 3
     crushing_resistance: 2
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 1
     combat: true
@@ -583,15 +583,15 @@
   description: >-
     Деревенский староста сидит тут о чем-то задумавшись.
   attributes:
-    health: 800
-    mana: 500
+    health: 350
+    mana: 300
     strength: 25
     agility: 25
     intellect: 20
     stamina: 25
     earth_damage: 3
     earth_resistance: 2
-    armor: 15
+    armor: 2
   metadata:
     trainer:
       skill: 'light_armor'
@@ -629,15 +629,15 @@
   description: >-
     Управляющий лесопилки сидит тут, изучая накладные.
   attributes:
-    health: 800
-    mana: 500
+    health: 350
+    mana: 300
     strength: 25
     agility: 25
     intellect: 20
     stamina: 25
     earth_damage: 3
     earth_resistance: 2
-    armor: 15
+    armor: 2
   metadata:
     trainer:
       skill: 'medium_armor'
@@ -674,15 +674,15 @@
   description: >-
     Алхимик задумчиво переливает тут что-то из одной колбы в другую.
   attributes:
-    health: 800
-    mana: 500
+    health: 400
+    mana: 320
     strength: 25
     agility: 25
     intellect: 20
     stamina: 25
     acid_damage: 3
     acid_resistance: 2
-    armor: 15
+    armor: 2
   metadata:
     trainer:
       skill: 'staves'
@@ -714,23 +714,23 @@
   tname: "ополченцем"
   pname: "ополченце"
   gender: "male"
-  min_damage: 15
-  max_damage: 55
+  min_damage: 25
+  max_damage: 45
   damageVerb: 'рубанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Грузный ополченец обходит дом, охраняя его от воров.
   attributes:
-    health: 1050
-    mana: 300
+    health: 450
+    mana: 150
     strength: 25
     agility: 25
     intellect: 10
     stamina: 25
     critical: 3
     crushing_resistance: 2
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 1
     combat: true
@@ -760,7 +760,7 @@
   tname: "усатым лесорубом"
   pname: "усатом лесорубе"
   gender: "male"
-  min_damage: 10
+  min_damage: 15
   max_damage: 45
   damageVerb: 'рубанул'
   travelVerbIn: "пришёл"
@@ -768,7 +768,7 @@
   description: >-
     Лесоруб с шикарными усами время от времени кивает головой.
   attributes:
-    health: 800
+    health: 330
     mana: 250
     strength: 25
     agility: 25
@@ -776,7 +776,7 @@
     stamina: 20
     cutting_damage: 2
     cutting_resistance: 2
-    armor: 10
+    armor: 1
   behaviors:
     allattributes: 1
     combat: true
@@ -799,15 +799,15 @@
   tname: "лесорубом"
   pname: "лесорубе"
   gender: "male"
-  min_damage: 12
-  max_damage: 50
+  min_damage: 20
+  max_damage: 45
   damageVerb: 'рубанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Лесоруб проходит здесь по своим делам.
   attributes:
-    health: 900
+    health: 370
     mana: 250
     strength: 25
     agility: 25
@@ -815,7 +815,7 @@
     stamina: 20
     critical: 2
     crushing_resistance: 2
-    armor: 12
+    armor: 1
   behaviors:
     allattributes: 1
     combat: true
@@ -843,15 +843,15 @@
   tname: "коровой"
   pname: "корове"
   gender: "female"
-  min_damage: 10
-  max_damage: 35
+  min_damage: 15
+  max_damage: 40
   damageVerb: 'боднула'
   travelVerbIn: "пришла"
   travelVerbOut: "ушла"
   description: >-
     Белая корова с рыжими пятнами стоит тут.
   attributes:
-    health: 800
+    health: 300
     mana: 10
     strength: 20
     agility: 20
@@ -859,7 +859,7 @@
     stamina: 20
     cold_resistance: 2
     earth_damage: 2
-    armor: 8
+    armor: 1
   behaviors:
     allattributes: 1
     combat: true
@@ -876,8 +876,8 @@
   tname: "бригадиром лесорубов"
   pname: "бригадире лесорубов"
   gender: "male"
-  min_damage: 15
-  max_damage: 55
+  min_damage: 25
+  max_damage: 45
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -885,7 +885,7 @@
     Бригадир лесорубов усиленно жестикулирует, разговаривая с женой.
   script: 'brigadir'
   attributes:
-    health: 1050
+    health: 400
     mana: 300
     strength: 25
     agility: 25
@@ -894,7 +894,7 @@
     crushing_damage: 3
     crushing_resistance: 2
     detect_invisibility: 20
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 1
     combat: true
@@ -929,15 +929,15 @@
     Молодая женщина в простой одежде занята беседой.
   script: 'brigadirwife'
   attributes:
-    health: 850
-    mana: 600
+    health: 350
+    mana: 300
     strength: 25
     agility: 25
     intellect: 10
     stamina: 25
     fire_damage: 3
     fire_resistance: 2
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 0
     combat: true
@@ -962,15 +962,15 @@
   tname: "курицой"
   pname: "курице"
   gender: "female"
-  min_damage: 10
-  max_damage: 35
+  min_damage: 15
+  max_damage: 40
   damageVerb: 'клюнула'
   travelVerbIn: "прибежала"
   travelVerbOut: "убежала"
   description: >-
     Белая курица увлеченно роется тут в земле.
   attributes:
-    health: 600
+    health: 250
     mana: 10
     strength: 20
     agility: 20
@@ -978,9 +978,9 @@
     stamina: 20
     cold_resistance: 2
     earth_damage: 2
-    armor: 8
+    armor: 0
   behaviors:
-    allattributes: 1
+    allattributes: 0
     combat: true
 - id: 70522
   keywords: [ "мул", "сильный" ]
@@ -992,15 +992,15 @@
   tname: "сильным мулом"
   pname: "сильном муле"
   gender: "male"
-  min_damage: 10
-  max_damage: 35
+  min_damage: 15
+  max_damage: 45
   damageVerb: 'боднул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Сильный мул, впряженный в колесо, мерно ходит по кругу.
   attributes:
-    health: 1200
+    health: 350
     mana: 10
     strength: 20
     agility: 20
@@ -1008,9 +1008,9 @@
     stamina: 20
     crushing_resistance: 2
     crushing_damage: 2
-    armor: 8
+    armor: 1
   behaviors:
-    allattributes: 1
+    allattributes: 0
     combat: true
 - id: 70523
   keywords: [ "привратник" ]
@@ -1022,8 +1022,8 @@
   tname: "привратником"
   pname: "привратнике"
   gender: "male"
-  min_damage: 15
-  max_damage: 55
+  min_damage: 25
+  max_damage: 45
   damageVerb: 'пырнул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -1032,15 +1032,15 @@
     подлиза и ничтожество. Уважает только власть и силу.
   script: 'gatekeeper'
   attributes:
-    health: 1050
-    mana: 300
+    health: 400
+    mana: 200
     strength: 25
     agility: 25
     intellect: 10
     stamina: 25
     piercing_damage: 3
     piercing_resistance: 2
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 1
     combat: true
@@ -1065,7 +1065,7 @@
   tname: "деревенской женщиной"
   pname: "деревенской женщине"
   gender: "female"
-  min_damage: 10
+  min_damage: 15
   max_damage: 45
   damageVerb: 'огрела'
   travelVerbIn: "пришла"
@@ -1073,15 +1073,15 @@
   description: >-
     Деревенская женщина идет по своим делам.
   attributes:
-    health: 600
-    mana: 450
+    health: 300
+    mana: 250
     strength: 25
     agility: 25
     intellect: 10
     stamina: 20
     earth_damage: 2
     earth_resistance: 2
-    armor: 9
+    armor: 1
   behaviors:
     allattributes: 1
     combat: true
@@ -1104,7 +1104,7 @@
   tname: "старым дедом"
   pname: "старом деде"
   gender: "male"
-  min_damage: 10
+  min_damage: 15
   max_damage: 45
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
@@ -1114,17 +1114,17 @@
     и дед выглядит еще довольно-таки бодрым и запросто может кого-нибудь огреть своей клюкой - так, что мало 
     не покажется!
   attributes:
-    health: 650
-    mana: 400
+    health: 300
+    mana: 200
     strength: 25
     agility: 25
     intellect: 10
     stamina: 20
     lightning_damage: 2
     lightning_resistance: 2
-    armor: 9
+    armor: 1
   behaviors:
-    allattributes: 1
+    allattributes: 0
     combat: true
     memory: true
     capable:
@@ -1156,7 +1156,7 @@
     Этого лентяя поставили здесь только потому, что из-за своего дурного характера он более ни на что не 
     годится. Странно! Молодой мужчина, хорошо сложенный, плечистый. Но лень, как говорится, его сгубила...
   attributes:
-    health: 1050
+    health: 400
     mana: 300
     strength: 25
     agility: 25
@@ -1164,7 +1164,7 @@
     stamina: 25
     cutting_damage: 3
     cutting_resistance: 2
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 1
     combat: true
@@ -1199,7 +1199,7 @@
     Огромный лохматый пес. Пожалуй, такой даже вооруженного человека может задрать, если тот будет 
     недостаточно расторопен!
   attributes:
-    health: 1100
+    health: 400
     mana: 250
     strength: 25
     agility: 25
@@ -1207,7 +1207,7 @@
     stamina: 25
     cutting_damage: 3
     cutting_resistance: 2
-    armor: 15
+    armor: 2
   behaviors:
     allattributes: 1
     combat: true
@@ -1236,23 +1236,23 @@
   tname: "хозяином лесопилки"
   pname: "хозяине лесопилки"
   gender: "male"
-  min_damage: 15
-  max_damage: 55
+  min_damage: 25
+  max_damage: 50
   damageVerb: 'рубанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Хозяин лесопилки сидит здесь в роскошном кресле.
   attributes:
-    health: 1100
-    mana: 450
+    health: 450
+    mana: 250
     strength: 25
     agility: 25
     intellect: 10
     stamina: 25
     cutting_damage: 3
     cutting_resistance: 2
-    armor: 17
+    armor: 2
   behaviors:
     allattributes: 1
     combat: true

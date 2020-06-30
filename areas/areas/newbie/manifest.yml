@@ -5,4 +5,4 @@ metadata:
   maxlevel: 5
 behaviors:
   progressive-respawn:
-    interval: 60
+    interval: 300

@@ -99,13 +99,17 @@
     Никто не знает, кто он и откуда. И кажется он и сам 
     об этом не вспомнит.
   attributes:
-    health: 700
+    health: 400
+    mana: 200
     strength: 28
     agility: 28
     crushing_damage: 2
   behaviors:
-    allattributes: 0
+    allattributes: 1
     combat: true
+    capable:
+      skills: [ 'rend' ]
+      spells: [  ]
     wander:
       interval: 30
       areaRestricted: true
@@ -137,12 +141,12 @@
     На нем надет добротный, но потрепанный костюм. В руках у него толстая 
     трость.
   attributes:
-    health: 700
+    health: 450
     strength: 28
     agility: 28
     crushing_damage: 2
   behaviors:
-    allattributes: 0
+    allattributes: 1
     combat: true
     wander:
       interval: 30
@@ -175,7 +179,7 @@
     жизненный опыт научил ее скрывать в просторных одеяниях 
     острый нож, которым она воспользуется при необходимости.
   attributes:
-    health: 700
+    health: 400
     strength: 28
     agility: 28
     piercing_damage: 2
@@ -212,13 +216,17 @@
     Нынешние тяжелые времена тяжело сказались на этом несчастном человеке.
     Местные люди сильно обнищали, а вместе с ними разорился и этот торговец.
   attributes:
-    health: 700
+    health: 400
+    mana: 250
     strength: 28
     agility: 28
     earth_damage: 2
   behaviors:
-    allattributes: 0
+    allattributes: 1
     combat: true
+    capable:
+      skills: [  ]
+      spells: [ 'heal' ]
     wander:
       interval: 20
       restrictTo: ['gurba:market1', 'gurba:market2', 'gurba:market3', 'gurba:market4']    
@@ -251,12 +259,12 @@
     к существованию. Он побирается на улицах города, надеясь на милость
     случайных прохожих.
   attributes:
-    health: 550
+    health: 350
     strength: 20
     agility: 20
     cutting_damage: 2
   behaviors:
-    allattributes: 0
+    allattributes: 1
     combat: true
     wander:
       interval: 30
@@ -278,23 +286,27 @@
   tname: "часовым"
   pname: "часовом"
   gender: "male"
-  min_damage: 19
-  max_damage: 67
+  min_damage: 25
+  max_damage: 55
   damageVerb: 'рубанул'
   description: >-
     Мускулистый мужчина закован с ног до головы в металлические доспехи.
     Он пристально следит за прохожими и пресекает проникновению
     преступных элементов.
   attributes:
-    health: 1000
+    health: 500
+    mana: 250
     strength: 30
     agility: 30
     cutting_resistance: 2
   behaviors:
-    allattributes: 0
+    allattributes: 2
     combat: true
     assist: true
     memory: true
+    capable:
+      skills: [ 'judge', 'smite' ]
+      spells: [  ]
     lootable:
       currencies:
         золото:
@@ -315,8 +327,8 @@
   tname: "стражником Гурбы"
   pname: "стражнике Гурбы"
   gender: "male"
-  min_damage: 19
-  max_damage: 67
+  min_damage: 25
+  max_damage: 55
   damageVerb: 'рубанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -325,16 +337,19 @@
     Он пристально следит за прохожими и пресекает проникновению
     преступных элементов.
   attributes:
-    health: 1000
+    health: 500
     strength: 30
     agility: 30
     cutting_damage: 1
     crushing_damage: 1
   behaviors:
-    allattributes: 0
+    allattributes: 2
     combat: true
     assist: true
     memory: true
+    capable:
+      skills: [ 'rend', 'lunge' ]
+      spells: [  ]
     wander:
       interval: 30
       areaRestricted: true
@@ -375,8 +390,8 @@
   tname: "странствующим магом"
   pname: "странствующем маге"
   gender: "male"
-  min_damage: 19
-  max_damage: 67
+  min_damage: 25
+  max_damage: 55
   damageVerb: 'испепелил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -385,20 +400,20 @@
     На голове его широкополая шляпа, а в руке он сжимает сучковатый
     посох.
   attributes:
-    health: 800
-    mana: 1000
+    health: 400
+    mana: 600
     strength: 30
     agility: 30
     intellect: 30
     fire_damage: 2
   behaviors:
-    allattributes: 0
+    allattributes: 2
     combat: true
     assist: true
     memory: true
     capable:
       skills: [ ]
-      spells: [ 'heal', 'fireball' ]
+      spells: [ 'heal', 'fireball', 'silence' ]
     wander:
       interval: 30
       areaRestricted: true
@@ -417,8 +432,8 @@
   tname: "пьяным лекарем"
   pname: "пьяном лекаре"
   gender: "male"
-  min_damage: 19
-  max_damage: 67
+  min_damage: 25
+  max_damage: 45
   damageVerb: 'огрел'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -426,20 +441,20 @@
     Пьяный лысый мужчина что-то бормочет себе под нос.
     Дрожащими руками он осушает одну рюмку за другой.
   attributes:
-    health: 800
-    mana: 1000
+    health: 400
+    mana: 600
     strength: 30
     agility: 30
     intellect: 30
-    fire_damage: 2
+    earth_damage: 2
   behaviors:
-    allattributes: 0
+    allattributes: 2
     combat: true
     assist: true
     memory: true
     capable:
       skills: [ ]
-      spells: [ 'heal', 'fireball' ]
+      spells: [ 'heal', 'plea' ]
   metadata:
     trainer:
       spell: "heal"
@@ -510,8 +525,8 @@
   tname: "капитаном стражи"
   pname: "капитане стражи"
   gender: "male"
-  min_damage: 19
-  max_damage: 67
+  min_damage: 25
+  max_damage: 45
   damageVerb: 'резанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -520,14 +535,14 @@
     При одном его приближении все преступники города пытаются
     где-нибудь скрыться.
   attributes:
-    health: 1200
+    health: 500
     mana: 400
     strength: 30
     agility: 30
     cutting_damage: 1
     crushing_damage: 1
   behaviors:
-    allattributes: 0
+    allattributes: 2
     combat: true
     assist: true
     memory: true
@@ -558,8 +573,8 @@
   tname: "стражником Гурбы"
   pname: "стражнике Гурбы"
   gender: "male"
-  min_damage: 19
-  max_damage: 67
+  min_damage: 25
+  max_damage: 45
   damageVerb: 'рубанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -568,16 +583,20 @@
     Он пристально следит за прохожими и пресекает проникновению
     преступных элементов.
   attributes:
-    health: 1000
+    health: 450
+    mana: 300
     strength: 30
     agility: 30
     cutting_damage: 1
     crushing_damage: 1
   behaviors:
-    allattributes: 0
+    allattributes: 2
     combat: true
     assist: true
     memory: true
+    capable:
+      skills: [ 'lunge' ]
+      spells: [  ]
     lootable:
       currencies:
         золото:

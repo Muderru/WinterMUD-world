@@ -87,7 +87,7 @@
   behaviors:
     decay_on_drop: true
   metadata:
-    quality: rare
+    quality: common
     slot: "оружие"
     itemLevel: 10
     level: 5
@@ -198,7 +198,7 @@
     level: 10
     minDamage: 13
     maxDamage: 26
-    speed: 2.8
+    speed: 2.2
     specialEffects:
       - "Эффект при ударе: исцеляет на 25% от нанесенного урона."
     stats:

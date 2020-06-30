@@ -16,7 +16,7 @@
   description: >-
     Крупный варг пристально следит за вами голодными глазами.
   attributes:
-    health: 1200
+    health: 500
     mana: 350
     strength: 30
     agility: 30
@@ -24,9 +24,7 @@
     stamina: 30
     cutting_damage: 4
     cutting_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 2
   behaviors:
     allattributes: 2
     combat: true
@@ -58,15 +56,15 @@
   tname: "диким варгом"
   pname: "диком варге"
   gender: "male"
-  min_damage: 20
-  max_damage: 70
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'укусил'
   travelVerbIn: "прибежал"
   travelVerbOut: "убежал"
   description: >-
     Дикий варг рыщет тут в поисках добычи.
   attributes:
-    health: 1300
+    health: 550
     mana: 350
     strength: 30
     agility: 30
@@ -74,9 +72,7 @@
     stamina: 30
     cutting_damage: 4
     cutting_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 2
   behaviors:
     allattributes: 2
     combat: true
@@ -108,15 +104,15 @@
   tname: "крадущимся гоблином"
   pname: "крадущемся гоблине"
   gender: "male"
-  min_damage: 20
-  max_damage: 70
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'пырнул'
   travelVerbIn: "подкрался"
   travelVerbOut: "ушёл"
   description: >-
     Небольшой гоблин осторожно крадется тут.
   attributes:
-    health: 1300
+    health: 600
     mana: 350
     strength: 30
     agility: 30
@@ -124,11 +120,10 @@
     stamina: 30
     piercing_damage: 4
     piercing_resistance: 4
-    armor: 20
+    armor: 3
     hide: 2
-    invisibility: 0
   behaviors:
-    allattributes: 3
+    allattributes: 2
     combat: true
     wander:
       interval: 40
@@ -158,15 +153,15 @@
   tname: "гоблином-разведчиком"
   pname: "гоблине-разведчике"
   gender: "male"
-  min_damage: 20
-  max_damage: 70
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'резанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Гоблин в грубых, кожаных доспехах бродит тут в поисках жертв.
   attributes:
-    health: 1300
+    health: 600
     mana: 350
     strength: 30
     agility: 30
@@ -174,11 +169,10 @@
     stamina: 30
     cutting_damage: 4
     cutting_resistance: 4
-    armor: 20
+    armor: 3
     hide: 1
-    invisibility: 0
   behaviors:
-    allattributes: 3
+    allattributes: 2
     combat: true
     wander:
       interval: 47
@@ -209,15 +203,15 @@
   tname: "гоблином-наездником"
   pname: "гоблине-наезднике"
   gender: "male"
-  min_damage: 20
-  max_damage: 70
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'уколол'
   travelVerbIn: "прискакал"
   travelVerbOut: "ускакал"
   description: >-
     Гоблин верхом на варге патрулирует окрестности.
   attributes:
-    health: 1300
+    health: 600
     mana: 350
     strength: 30
     agility: 30
@@ -225,11 +219,9 @@
     stamina: 30
     piercing_damage: 4
     piercing_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
-    allattributes: 3
+    allattributes: 2
     combat: true
     wander:
       interval: 38
@@ -259,8 +251,8 @@
   tname: "лесным троллем"
   pname: "лесном тролле"
   gender: "male"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 35
+  max_damage: 65
   damageVerb: 'огрел'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -268,7 +260,7 @@
     Огромный лесной тролль неспеша бредет тут куда-то.
   script: 'troll'
   attributes:
-    health: 1500
+    health: 650
     mana: 400
     strength: 30
     agility: 30
@@ -276,11 +268,9 @@
     stamina: 30
     crushing_damage: 5
     crushing_resistance: 5
-    armor: 25
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
-    allattributes: 3
+    allattributes: 2
     combat: true
     wander:
       interval: 77
@@ -318,7 +308,7 @@
   description: >-
     Грязный разбойник стоит тут, наблюдая за окрестностями.
   attributes:
-    health: 1300
+    health: 600
     mana: 350
     strength: 30
     agility: 30
@@ -326,11 +316,10 @@
     stamina: 30
     piercing_damage: 4
     piercing_resistance: 4
-    armor: 20
+    armor: 3
     hide: 1
-    invisibility: 0
   behaviors:
-    allattributes: 3
+    allattributes: 2
     combat: true
     memory: true
     aggro:
@@ -366,7 +355,7 @@
   description: >-
     Рыжая белка с пушистым хвостиком сидит тут на дереве.
   attributes:
-    health: 600
+    health: 250
     mana: 10
     strength: 20
     agility: 20
@@ -374,11 +363,9 @@
     stamina: 20
     cold_resistance: 2
     earth_damage: 2
-    armor: 8
-    hide: 0
-    invisibility: 0
+    armor: 1
   behaviors:
-    allattributes: 1
+    allattributes: 0
     combat: true
     wander:
       interval: 25
@@ -404,7 +391,7 @@
   description: >-
     Маленький серый зайчик бегает тут.
   attributes:
-    health: 600
+    health: 250
     mana: 10
     strength: 20
     agility: 20
@@ -412,11 +399,9 @@
     stamina: 20
     cold_resistance: 2
     earth_damage: 2
-    armor: 8
-    hide: 0
-    invisibility: 0
+    armor: 1
   behaviors:
-    allattributes: 1
+    allattributes: 0
     wander:
       interval: 33
       areaRestricted: true
@@ -439,7 +424,7 @@
   description: >-
     Огромный черный варг стоит тут.
   attributes:
-    health: 1300
+    health: 600
     mana: 350
     strength: 30
     agility: 30
@@ -447,11 +432,9 @@
     stamina: 30
     cutting_damage: 4
     cutting_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
-    allattributes: 3
+    allattributes: 2
     combat: true
     wander:
       interval: 45
@@ -483,15 +466,15 @@
   tname: "белой волчицей"
   pname: "белой волчице"
   gender: "female"
-  min_damage: 20
-  max_damage: 70
-  damageVerb: 'укусил'
-  travelVerbIn: "прибежал"
-  travelVerbOut: "убежал"
+  min_damage: 30
+  max_damage: 60
+  damageVerb: 'укусила'
+  travelVerbIn: "прибежала"
+  travelVerbOut: "убежала"
   description: >-
     Белая волчица трусливо семенит вокруг вожака варгов.
   attributes:
-    health: 1100
+    health: 550
     mana: 550
     strength: 30
     agility: 30
@@ -499,11 +482,9 @@
     stamina: 30
     cutting_damage: 4
     cutting_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
-    allattributes: 3
+    allattributes: 1
     combat: true
     assist: true
     capable:
@@ -526,8 +507,8 @@
   tname: "атаманом разбойников"
   pname: "атамане разбойников"
   gender: "male"
-  min_damage: 25
-  max_damage: 85
+  min_damage: 35
+  max_damage: 65
   damageVerb: 'рубанул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -535,7 +516,7 @@
     Видимо атаманом может только стать только самый сильный разбойник, иначе его приказов
     просто никто не станет исполнять.
   attributes:
-    health: 1500
+    health: 650
     mana: 350
     strength: 30
     agility: 30
@@ -543,11 +524,9 @@
     stamina: 30
     cutting_damage: 4
     cutting_resistance: 4
-    armor: 25
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
-    allattributes: 3
+    allattributes: 2
     combat: true
     memory: true
     assist: true
@@ -576,8 +555,8 @@
   tname: "правой рукой атамана"
   pname: "правой руке атамана"
   gender: "male"
-  min_damage: 20
-  max_damage: 70
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'пырнул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -585,7 +564,7 @@
     По всей видимости, это либо родственник атамана, либо его друг детства. Как бы то ни было, атаман 
     доверяет своему помощнику безоговорочно, и тот отвечает ему тем же.
   attributes:
-    health: 1300
+    health: 550
     mana: 350
     strength: 30
     agility: 30
@@ -593,11 +572,9 @@
     stamina: 30
     piercing_damage: 4
     piercing_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
-    allattributes: 3
+    allattributes: 1
     combat: true
     memory: true
     assist: true
@@ -620,7 +597,7 @@
   pname: "старом разбойнике"
   gender: "male"
   min_damage: 20
-  max_damage: 70
+  max_damage: 60
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -628,7 +605,7 @@
     Вы видите дряхлого, полуслепого старикашку, который того и гляди откинет копыта. Странно даже, что 
     атаман не отпускает далеко от себя этого старика.
   attributes:
-    health: 1000
+    health: 500
     mana: 650
     strength: 30
     agility: 30
@@ -636,11 +613,9 @@
     stamina: 30
     earth_damage: 4
     earth_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 2
   behaviors:
-    allattributes: 3
+    allattributes: 1
     combat: true
     memory: true
     assist: true
@@ -662,15 +637,15 @@
   tname: "разбойником"
   pname: "разбойнике"
   gender: "male"
-  min_damage: 20
-  max_damage: 70
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'пырнул'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
   description: >-
     Как это не удивительно, этот человек похож на самого обычного разбойника с большой дороги.
   attributes:
-    health: 1300
+    health: 600
     mana: 350
     strength: 30
     agility: 30
@@ -678,9 +653,7 @@
     stamina: 30
     piercing_damage: 4
     piercing_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
     allattributes: 2
     combat: true
@@ -696,7 +669,7 @@
       pools:
         - "oldroad:66821": 15
 - id: 66815
-  keywords: [ "разбойник" ]
+  keywords: [ "разбойница" ]
   level: 14
   name: "разбойница"
   rname: "разбойницы"
@@ -713,7 +686,7 @@
   description: >-
     Высокая и мускулистая, эта разбойница не даст в обиду ни себя, ни своего избранника.
   attributes:
-    health: 1300
+    health: 600
     mana: 350
     strength: 30
     agility: 30
@@ -721,11 +694,9 @@
     stamina: 30
     piercing_damage: 4
     piercing_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
-    allattributes: 2
+    allattributes: 1
     combat: true
     memory: true
     capable:
@@ -748,8 +719,8 @@
   tname: "окосевшим разбойником"
   pname: "окосевшем разбойнике"
   gender: "male"
-  min_damage: 20
-  max_damage: 70
+  min_damage: 30
+  max_damage: 60
   damageVerb: 'ударил'
   travelVerbIn: "пришёл"
   travelVerbOut: "ушёл"
@@ -757,7 +728,7 @@
     Этот разбойник покрыт застарелыми шрамами от многочисленных драк, в которых ему довелось побывать. 
     Также ему кто-то выбил правый глаз.
   attributes:
-    health: 1000
+    health: 600
     mana: 650
     strength: 30
     agility: 30
@@ -765,11 +736,9 @@
     stamina: 30
     earth_damage: 4
     earth_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
-    allattributes: 3
+    allattributes: 2
     combat: true
     memory: true
     wander:
@@ -835,14 +804,14 @@
   pname: "взбесившемся варге"
   gender: "male"
   min_damage: 20
-  max_damage: 70
+  max_damage: 60
   damageVerb: 'укусил'
   travelVerbIn: "прибежал"
   travelVerbOut: "убежал"
   description: >-
     Взбесившийся варг с капающей изо рта слюной стоит тут.
   attributes:
-    health: 1300
+    health: 550
     mana: 350
     strength: 30
     agility: 30
@@ -850,11 +819,9 @@
     stamina: 30
     cutting_damage: 4
     cutting_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
-    allattributes: 3
+    allattributes: 1
     combat: true
     area_decay: true
     aggro:
@@ -888,7 +855,7 @@
   description: >-
     Это странное человекоподобное существо с неопределенной, постоянно меняющейся формой.
   attributes:
-    health: 1300
+    health: 600
     mana: 350
     strength: 30
     agility: 30
@@ -896,11 +863,9 @@
     stamina: 30
     cutting_damage: 4
     cutting_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 2
   behaviors:
-    allattributes: 3
+    allattributes: 1
     area_decay: true
     combat: true
     aggro:
@@ -934,7 +899,7 @@
   description: >-
     Гоблин верхом на варге патрулирует окрестности.
   attributes:
-    health: 1300
+    health: 600
     mana: 350
     strength: 30
     agility: 30
@@ -942,11 +907,9 @@
     stamina: 30
     piercing_damage: 4
     piercing_resistance: 4
-    armor: 20
-    hide: 0
-    invisibility: 0
+    armor: 3
   behaviors:
-    allattributes: 3
+    allattributes: 1
     combat: true
     area_decay: true
     aggro:

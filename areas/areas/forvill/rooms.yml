@@ -10,7 +10,7 @@
   exits:
     - roomId: "forvill:70501"
       direction: север
-    - roomId: "2.4.5:forest6"
+    - roomId: "2.4.5:forest2"
       direction: юг
     - roomId: "forvill:70530"
       direction: восток

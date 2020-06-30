@@ -8,8 +8,8 @@
   tname: "огромным саблезубым кроликом"
   pname: "огромном саблезубом кролике"
   gender: "male"
-  min_damage: 6
-  max_damage: 18
+  min_damage: 10
+  max_damage: 25
   description: >-
     Он выглядит нелепо, но опасно.
   attributes:
