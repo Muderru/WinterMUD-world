@@ -727,3 +727,19 @@
   metadata:
     level: 5
     spell: "silence"
+- id: scroll_courage
+  type: SCROLL
+  name: "свиток бодрости"
+  rname: "свитка бодрости"
+  dname: "свитку бодрости"
+  vname: "свиток бодрости"
+  tname: "свитком бодрости"
+  pname: "свитке бодрости"
+  gender: "male"
+  roomDesc: "Свиток бодрости валяется тут."
+  description: >-
+    На этом свитке записано магическое заклинание. Он исчезнет после прочтения.
+  keywords: [ "свиток", "бодрости" ]
+  metadata:
+    level: 1
+    spell: "courage"

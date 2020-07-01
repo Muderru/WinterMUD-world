@@ -644,5 +644,8 @@
         "gurba:scroll_silence":
           cost: 150
           currency: золото
+        "gurba:scroll_courage":
+          cost: 250
+          currency: золото
       enterMessage: "Подходите! Покупайте великолепные товары!"
       leaveMessage: "Возвращайтесь обратно!"
