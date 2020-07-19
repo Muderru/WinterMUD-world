@@ -611,6 +611,8 @@
       direction: восток
     - roomId: "oldroad:66801"
       direction: юг
+    - roomId: "fortavern:80100"
+      direction: запад
 - id: 66843
   title: "В лагере"
   description: >-

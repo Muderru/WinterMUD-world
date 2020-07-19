@@ -13,6 +13,10 @@ module.exports = {
         return Broadcast.sayAt(player, 'Что и куда вы хотите подлить?');
       }
 
+      if (!player.inventory) {
+        return Broadcast.sayAt(player, 'У вас нет яда.');
+      }
+
       let hasPoison = false;
       for (const [, item ] of player.inventory) {
         if (item.name == 'пузырек с ядом') {

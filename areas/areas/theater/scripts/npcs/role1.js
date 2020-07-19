@@ -3,6 +3,10 @@
 module.exports = {
   listeners: {
     playerEnter: state => function (player) {
+      if (!player.equipment) {
+        return;
+      }
+
       let breast = false;
       let head = false;
 
