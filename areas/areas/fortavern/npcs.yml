@@ -1101,7 +1101,10 @@
     combat: true
     wander:
       interval: 60
-      areaRestricted: true
+      restrictTo: [ 'fortavern:80147', 'fortavern:80148', 'fortavern:80149', 'fortavern:80150', 'fortavern:80151', 
+                    'fortavern:80152', 'fortavern:80153', 'fortavern:80154', 'fortavern:80155', 'fortavern:80156', 
+                    'fortavern:80157', 'fortavern:80158', 'fortavern:80159', 'fortavern:80160', 'fortavern:80161', 
+                    'fortavern:80162', 'fortavern:80163', 'fortavern:80164', 'fortavern:80165', 'fortavern:80166' ]
     randomskill: true
     aggro:
       delay: 1
@@ -1109,7 +1112,7 @@
         players: true
         npcs: false
     capable:
-      skills: [ 'smite' ]
+      skills: [ 'rend' ]
       spells: [  ]
     lootable:
       currencies:
