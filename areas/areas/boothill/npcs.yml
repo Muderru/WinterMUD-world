@@ -239,8 +239,6 @@
   behaviors:
     allattributes: 0
     combat: true
-    block:
-      exits: [ 'восток' ]
     lootable:
       currencies:
         золото:
@@ -250,6 +248,9 @@
         - "boothill:guardianarmor": 10
         - "boothill:guardianboots": 10
         - "boothill:guardiancloak": 10
+  metadata:
+    block:
+      exits: [ 'восток' ]
 - id: pianist
   keywords: ["пианистка"]
   name: "пианистка"

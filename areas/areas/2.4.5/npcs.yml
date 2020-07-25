@@ -20,8 +20,6 @@
   behaviors:
     allattributes: 1
     combat: true
-    block:
-      exits: [ 'восток' ]
     lootable:
       currencies:
         золото:
@@ -30,6 +28,9 @@
       pools:
         - "2.4.5:bankkey": 100
         - "2.4.5:short_sword": 10
+  metadata:
+    block:
+      exits: [ 'восток' ]
 - id: barkeep
   keywords: [ "бармен", "косоглазый" ]
   level: 12

@@ -141,13 +141,13 @@
     mana_regeneration: 10
   metadata:
     accepts: [ 'theater:47735' ]
+    block:
+      exits: [ 'восток' ]
   behaviors:
     allattributes: 2
     combat: true
     assist: true
     memory: true
-    block:
-      exits: [ 'восток' ]
     capable:
       skills: [ 'rend', 'smite', 'shieldblock' ]
       spells: [ ]
@@ -1077,8 +1077,6 @@
     combat: true
     assist: true
     memory: true
-    block:
-      exits: [ 'север' ]
     capable:
       skills: [ ]
       spells: [ 'paralysis', 'silence', 'lightning' ]
@@ -1089,6 +1087,9 @@
           max: 100
       pools:
         - "theater:47704": 25
+  metadata:
+    block:
+      exits: [ 'север' ]
 - id: 47721
   keywords: [ "посетитель", "рассерженный" ]
   level: 22

@@ -530,8 +530,6 @@
     combat: true
     memory: true
     assist: true
-    block:
-      exits: [ 'юг' ]
     capable:
       skills: [ 'rend', 'smite' ]
       spells: [  ]
@@ -545,6 +543,9 @@
         - "oldroad:66809": 25
         - "oldroad:66819": 25
         - "oldroad:66820": 25
+  metadata:
+    block:
+      exits: [ 'юг' ]
 - id: 66812
   keywords: [ "разбойник", "правая" ]
   level: 14
