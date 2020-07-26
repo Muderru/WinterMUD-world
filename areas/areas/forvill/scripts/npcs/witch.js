@@ -1,5 +1,3 @@
-'use strict';
-
 const { Broadcast } = require('ranvier');
 
 let questactive1 = true;
@@ -8,7 +6,7 @@ let playerName = '';
 
 module.exports = {
   listeners: {
-    playerEnter: state => function (player) {
+    playerEnter: (state) => function (player) {
       if (questactive1) {
         if (this.hasEffectType('speaking')) {
           return;
@@ -16,18 +14,18 @@ module.exports = {
 
         const speak = state.EffectFactory.create('speak', {}, {
           messageList: [
-             "А, чужестранец! Не поможешь ли старой даме в одном деле? Кхе-кхе.",
+            'А, чужестранец! Не поможешь ли старой даме в одном деле? Кхе-кхе.',
           ],
-          outputFn: message => {
+          outputFn: (message) => {
             message = message.replace(/%player%/, player.name);
             state.ChannelManager.get('say').send(state, this, message);
-          }
+          },
         });
         this.addEffect(speak);
       } else if (questactive2) {
         let poisonRoom = null;
         poisonRoom = state.RoomManager.getRoom('forvill:70520');
-        let poisoned = poisonRoom.getMeta('poison');
+        const poisoned = poisonRoom.getMeta('poison');
         if (player.name === playerName && poisoned) {
           state.ChannelManager.get('say').send(state, this, 'Отличная работа. Вот тебе несколько золотых за труды.');
           const playerGold = player.getMeta('currencies.золото');
@@ -43,14 +41,14 @@ module.exports = {
       }
     },
 
-    playerLeave: state => function (player) {
+    playerLeave: (state) => function (player) {
       const speaking = this.effects.getByType('speaking');
       if (speaking) {
         speaking.remove();
       }
     },
 
-    respawnTick: state => function () {
+    respawnTick: (state) => function () {
       questactive1 = true;
       questactive2 = false;
       playerName = '';
@@ -59,7 +57,7 @@ module.exports = {
       poisonRoom.setMeta('poison', false);
     },
 
-    take: state => function (player, item) {
+    take: (state) => function (player, item) {
       if (questactive1 === false && questactive2 === false) {
         state.ChannelManager.get('say').send(state, this, 'О, это именно то, что мне нужно.');
         Broadcast.sayAt(player.room, 'Ведьма с гиканьем бросилась к большому котлу у углу магазина.');
@@ -79,7 +77,7 @@ module.exports = {
       }
     },
 
-    channelReceive: state => function (say, player, message) {
+    channelReceive: (state) => function (say, player, message) {
       if (message === 'помогу') {
         if (questactive1) {
           if (this.hasEffectType('speaking')) {
@@ -88,23 +86,22 @@ module.exports = {
 
           const speak = state.EffectFactory.create('speak', {}, {
             messageList: [
-               "Спасибо, добрый человек! Один из жителей деревни не заплатил мне за зелье.",
-               "А, оно ему помогло. Вот, женился недавно.",
-               "Хочу ему отомстить. Потравить его скотину.",
-               "Но для яда мне не хватает комочка тины. Принеси мне его.",
+              'Спасибо, добрый человек! Один из жителей деревни не заплатил мне за зелье.',
+              'А, оно ему помогло. Вот, женился недавно.',
+              'Хочу ему отомстить. Потравить его скотину.',
+              'Но для яда мне не хватает комочка тины. Принеси мне его.',
             ],
-            outputFn: message => {
+            outputFn: (message) => {
               message = message.replace(/%player%/, player.name);
               state.ChannelManager.get('say').send(state, this, message);
-            }
+            },
           });
           this.addEffect(speak);
           questactive1 = false;
-
         } else {
           state.ChannelManager.get('say').send(state, this, 'Мне не нужна помощь.');
         }
       }
-    }
-  }
+    },
+  },
 };

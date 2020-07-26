@@ -1,10 +1,8 @@
-'use strict';
-
 const { Broadcast } = require('ranvier');
 
 module.exports = {
   listeners: {
-    playerEnter: state => function (player) {
+    playerEnter: (state) => function (player) {
       if (!this.hasAttribute('detect_invisibility')) {
         return;
       }
@@ -21,7 +19,6 @@ module.exports = {
       nextRoom = state.RoomManager.getRoom('forvill:70513');
       player.moveTo(nextRoom);
       look.execute(null, player, null);
-      return;
-    }
-  }
+    },
+  },
 };

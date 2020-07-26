@@ -1,10 +1,8 @@
-'use strict';
-
 const { Broadcast } = require('ranvier');
 
 module.exports = {
   listeners: {
-    command: state => function (player, commandName, args) {
+    command: (state) => function (player, commandName, args) {
       if (commandName !== 'приготовить') {
         return;
       }
@@ -26,6 +24,6 @@ module.exports = {
       player.addItem(targetItem);
       player.room.removeItem(targetItem);
       state.ItemManager.remove(this);
-    }
-  }
+    },
+  },
 };

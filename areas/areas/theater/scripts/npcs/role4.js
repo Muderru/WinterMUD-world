@@ -1,10 +1,8 @@
-'use strict';
-
 const { Broadcast } = require('ranvier');
 
 module.exports = {
   listeners: {
-    spawn: state => function () {
+    spawn: (state) => function () {
       state.ChannelManager.get('say').send(state, this, 'Любовь,');
       state.ChannelManager.get('say').send(state, this, 'Которая искать ее велела...');
       state.ChannelManager.get('say').send(state, this, 'Она совет дала мне, я - глаза ей -');
@@ -13,7 +11,7 @@ module.exports = {
       state.ChannelManager.get('say').send(state, this, 'Пустился б за таким товаром я.');
     },
 
-    channelReceive: state => function (say, player, message) {
+    channelReceive: (state) => function (say, player, message) {
       if (message === 'Ты знаешь, маска тьмы теперь скрывает лицо мое, а то бы на щеках ты девичьего стыда увидел краску.') {
         player.room.removeNpc(this, true);
         player.room.spawnNpc(state, 'theater:47738');
@@ -23,8 +21,7 @@ module.exports = {
           const quest = state.QuestFactory.create(state, questRef, player);
           player.questTracker.start(quest);
         }
-        return;
       }
-    }
-  }
+    },
+  },
 };

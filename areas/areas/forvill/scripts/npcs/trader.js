@@ -1,9 +1,7 @@
-'use strict';
-
 module.exports = {
   listeners: {
-    playerEnter: state => function (player) {
-      let rand = Math.floor((Math.random() * 100) + 1);
+    playerEnter: (state) => function (player) {
+      const rand = Math.floor((Math.random() * 100) + 1);
 
       if (rand >= 60) {
         return;
@@ -11,6 +9,6 @@ module.exports = {
 
       state.ChannelManager.get('say').send(state, this, 'Поздравляю! Ты будешь моим сотым покупателем!');
       state.ChannelManager.get('say').send(state, this, 'Только для тебя всё по специальной цене!');
-    }
-  }
+    },
+  },
 };

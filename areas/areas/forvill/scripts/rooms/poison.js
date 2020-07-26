@@ -1,10 +1,8 @@
-'use strict';
-
-const { Broadcast, Damage } = require('ranvier');
+const { Broadcast } = require('ranvier');
 
 module.exports = {
   listeners: {
-    command: state => function (player, commandName, args) {
+    command: (state) => function (player, commandName, args) {
       if (commandName !== 'подлить') {
         return;
       }
@@ -18,8 +16,8 @@ module.exports = {
       }
 
       let hasPoison = false;
-      for (const [, item ] of player.inventory) {
-        if (item.name == 'пузырек с ядом') {
+      for (const [, item] of player.inventory) {
+        if (item.name === 'пузырек с ядом') {
           hasPoison = true;
           state.ItemManager.remove(item);
         }
@@ -40,8 +38,8 @@ module.exports = {
       } else {
         ending = 'о';
       }
-      Broadcast.sayAtExcept(player.room, `${player.Name} вылил` + ending + ` содержимое пузырька с ядом в поилку для животных.`, player);
+      Broadcast.sayAtExcept(player.room, `${player.Name} вылил${ending} содержимое пузырька с ядом в поилку для животных.`, player);
       this.setMeta('poison', true);
-    }
-  }
+    },
+  },
 };

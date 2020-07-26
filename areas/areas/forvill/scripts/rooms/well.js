@@ -1,10 +1,8 @@
-'use strict';
-
 const { Broadcast } = require('ranvier');
 
 module.exports = {
   listeners: {
-    command: state => function (player, commandName, args) {
+    command: (state) => function (player, commandName, args) {
       if (commandName === 'прыгнуть') {
         if (args !== 'в колодец') {
           return Broadcast.sayAt(player, 'Куда вы хотите прыгнуть?');
@@ -25,16 +23,15 @@ module.exports = {
         } else {
           ending = 'ось';
         }
-        Broadcast.sayAtExcept(player.room, `${player.name} аккуратно спустил` + ending + ` в колодец по веревке.`, player);
+        Broadcast.sayAtExcept(player.room, `${player.name} аккуратно спустил${ending} в колодец по веревке.`, player);
         let nextRoom = null;
         const look = state.CommandManager.get('look');
         nextRoom = state.RoomManager.getRoom('forvill:70529');
         player.moveTo(nextRoom);
         look.execute(null, player, null);
-        return;
       } else {
-        return;
+
       }
-    }
-  }
+    },
+  },
 };

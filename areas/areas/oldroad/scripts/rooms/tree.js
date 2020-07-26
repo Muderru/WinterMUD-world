@@ -1,10 +1,8 @@
-'use strict';
-
 const { Broadcast } = require('ranvier');
 
 module.exports = {
   listeners: {
-    command: state => function (player, commandName, args) {
+    command: (state) => function (player, commandName, args) {
       if (commandName === 'залезть' || commandName === 'лезть') {
         if (args !== 'на дерево') {
           return Broadcast.sayAt(player, 'Куда вы хотите залезть?');
@@ -29,6 +27,6 @@ module.exports = {
         player.moveTo(nextRoom);
         look.execute(null, player, null);
       }
-    }
-  }
+    },
+  },
 };

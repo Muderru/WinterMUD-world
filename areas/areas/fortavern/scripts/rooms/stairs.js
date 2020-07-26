@@ -1,11 +1,9 @@
-'use strict';
-
 const { Broadcast, Damage } = require('ranvier');
 
 module.exports = {
   listeners: {
-    playerEnter: state => function (player, prevRoom) {
-      let rand = Math.floor((Math.random() * 100) + 1);
+    playerEnter: (state) => function (player, prevRoom) {
+      const rand = Math.floor((Math.random() * 100) + 1);
 
       if (rand >= 20) {
         return;
@@ -22,6 +20,6 @@ module.exports = {
 
       const damage = new Damage('health', 50, null, this);
       damage.commit(player);
-    }
-  }
+    },
+  },
 };

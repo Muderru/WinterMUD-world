@@ -1,16 +1,14 @@
-'use strict';
-
 const { Broadcast } = require('ranvier');
 
 module.exports = {
   listeners: {
-    command: state => function (player, commandName, args) {
+    command: (state) => function (player, commandName, args) {
       if (player.isInCombat()) {
-        return Broadcast.sayAt(player, `Вы сейчас сражаетесь!`);
+        return Broadcast.sayAt(player, 'Вы сейчас сражаетесь!');
       }
 
       if (args === 'в дыру' || args === 'дыра' || args === 'в нору' || args === 'нора') {
-        Broadcast.sayAt(player, `Вы залезли в дыру.`);
+        Broadcast.sayAt(player, 'Вы залезли в дыру.');
 
         if (player.gender === 'male') {
           Broadcast.sayAtExcept(player.room, `${player.name} залез в дыру.`, player);
@@ -27,20 +25,19 @@ module.exports = {
         nextRoom = state.RoomManager.getRoom('fortavern:80128');
         player.moveTo(nextRoom);
         look.execute(null, player, null);
-        return;
       } else {
         return Broadcast.sayAt(player, 'Куда вы хотите залезть?');
       }
     },
 
-    playerEnter: state => function (player) {
-      let rand = Math.floor((Math.random() * 100) + 1);
+    playerEnter: (state) => function (player) {
+      const rand = Math.floor((Math.random() * 100) + 1);
 
       if (rand >= 60) {
         return;
       }
 
-      Broadcast.sayAt(player, `За стеной послышался крысиный писк.`);
-    }
-  }
+      Broadcast.sayAt(player, 'За стеной послышался крысиный писк.');
+    },
+  },
 };

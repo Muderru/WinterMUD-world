@@ -1,12 +1,10 @@
-'use strict';
-
 const { Broadcast } = require('ranvier');
 
 let giveKey = false;
 
 module.exports = {
   listeners: {
-    playerEnter: state => function (player) {
+    playerEnter: (state) => function (player) {
       if (this.hasEffectType('speaking')) {
         return;
       }
@@ -18,17 +16,17 @@ module.exports = {
 
       const speak = state.EffectFactory.create('speak', {}, {
         messageList: [
-           "Привет, %player%. У меня есть работенка для тебя. Интересует?",
+          'Привет, %player%. У меня есть работенка для тебя. Интересует?',
         ],
-        outputFn: message => {
+        outputFn: (message) => {
           message = message.replace(/%player%/, player.name);
           state.ChannelManager.get('say').send(state, this, message);
-        }
+        },
       });
       this.addEffect(speak);
     },
 
-    updateTick: state => function () {
+    updateTick: (state) => function () {
       const questRef = 'fortavern:80100';
       let hasKey = false;
       for (const pc of this.room.players) {
@@ -57,15 +55,15 @@ module.exports = {
       }
     },
 
-    respawnTick: state => function () {
+    respawnTick: (state) => function () {
       giveKey = false;
     },
 
-    playerLeave: state => function (player) {
+    playerLeave: (state) => function (player) {
       const speaking = this.effects.getByType('speaking');
       if (speaking) {
         speaking.remove();
       }
-    }
-  }
+    },
+  },
 };

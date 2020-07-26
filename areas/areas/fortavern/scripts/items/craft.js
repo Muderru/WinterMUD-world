@@ -1,10 +1,8 @@
-'use strict';
-
-const { Broadcast, Damage } = require('ranvier');
+const { Broadcast } = require('ranvier');
 
 module.exports = {
   listeners: {
-    command: state => function (player, commandName, args) {
+    command: (state) => function (player, commandName, args) {
       if (commandName !== 'закрепить') {
         return;
       }
@@ -19,10 +17,10 @@ module.exports = {
 
       let hasStar = false;
       let hasMoon = false;
-      for (const [, item ] of player.inventory) {
-        if (item.entityReference == 'fortavern:80139') {
+      for (const [, item] of player.inventory) {
+        if (item.entityReference === 'fortavern:80139') {
           hasMoon = true;
-        } else if (item.entityReference == 'fortavern:80140') {
+        } else if (item.entityReference === 'fortavern:80140') {
           hasStar = true;
         }
       }
@@ -60,7 +58,7 @@ module.exports = {
       } else {
         ending = 'о';
       }
-      Broadcast.sayAtExcept(player.room, `${player.Name} украсил` + ending + ` шелковые рукава эмблемами золотой звезды и серебряного полумесяца.`, player);
-    }
-  }
+      Broadcast.sayAtExcept(player.room, `${player.Name} украсил${ending} шелковые рукава эмблемами золотой звезды и серебряного полумесяца.`, player);
+    },
+  },
 };
