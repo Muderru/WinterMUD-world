@@ -1,3 +1,5 @@
+const { Broadcast } = require('ranvier');
+
 module.exports = {
   listeners: {
     playerEnter: (state) => function (player) {
@@ -5,16 +7,14 @@ module.exports = {
         return;
       }
 
-      if (player.level > 1) {
+      const questRef = 'tookland:34700';
+      if (!state.QuestFactory.canStart(player, questRef)) {
         return;
       }
 
       const speak = state.EffectFactory.create('speak', {}, {
         messageList: [
-          'Приветствую, %player%. Мы уже хотели записать тебя в дезертиры.',
-          'В военное время нужны все, даже такие отбросы как ты.',
-          'Тренировочный лагерь для новобранцев расположен на северо-западе,',
-          "чтобы попасть туда введи команду '<white>северо-запад</white>' или сокращенно '<white>сз</white>'.",
+          'Приветствую, %player%. У меня есть работа для тебя. Хочешь подзаработать?',
         ],
         outputFn: (message) => {
           message = message.replace(/%player%/, player.name);

@@ -631,22 +631,6 @@
   metadata:
     level: 5
     spell: "acid"
-- id: scroll_acid
-  type: SCROLL
-  name: "свиток кислоты"
-  rname: "свитка кислоты"
-  dname: "свитку кислоты"
-  vname: "свиток кислоты"
-  tname: "свитком кислоты"
-  pname: "свитке кислоты"
-  gender: "male"
-  roomDesc: "Свиток кислоты валяется тут."
-  description: >-
-    На этом свитке записано магическое заклинание. Он исчезнет после прочтения.
-  keywords: [ "свиток", "кислоты" ]
-  metadata:
-    level: 5
-    spell: "acid"
 - id: scroll_invisibility
   type: SCROLL
   name: "свиток невидимости"
