@@ -577,7 +577,7 @@
   light: 50
   script: 'hole'
   metadata:
-    commands: [ 'залезть' ]
+    commands: ['залезть']
   exits:
     - roomId: "tookland:34734"
       direction: север
@@ -1281,6 +1281,9 @@
     плату готов любого переправить на восточный берег Гвендолена.
   light: 50
   npcs: ["tookland:34707"]
+  metadata:
+    commands:  ['переправиться']
+  script: 'ferry'
   exits:
     - roomId: "tookland:34754"
       direction: север

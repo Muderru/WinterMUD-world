@@ -412,8 +412,8 @@
         "forvill:70513":
           cost: 100
           currency: золото
-      enterMessage: "У меня лучшая кожаная броня в округе!"
-      leaveMessage: "Пока, пока!"
+      enterMessage: "Выпить не желаешь!"
+      leaveMessage: "Давай, до свидания!"
 - id: 70509
   keywords: [ "лесоруб", "подвыпивший" ]
   level: 8

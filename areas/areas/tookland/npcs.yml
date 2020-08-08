@@ -307,6 +307,7 @@
   travelVerbOut: "ушёл"
   description: >-
     Высокий паромщик стоит на переправе к другому берегу.
+  script: 'ferryman'
   attributes:
     health: 400
     mana: 250
