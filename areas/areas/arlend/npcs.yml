@@ -28,6 +28,7 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
@@ -36,7 +37,7 @@
       interval: 45
       areaRestricted: true
     capable:
-      skills: []
+      skills: ['rend']
       spells: []
     lootable:
       currencies:
@@ -85,11 +86,12 @@
     assist: true
     memory: true
     wimpy: true
+    randomspell: true
     wander:
       interval: 45
       areaRestricted: true
     capable:
-      skills: []
+      skills: ['rend']
       spells: []
     lootable:
       currencies:
@@ -287,9 +289,10 @@
     assist: true
     memory: true
     wimpy: true
+    randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['ice_peak']
     lootable:
       currencies:
         золото:
@@ -334,9 +337,10 @@
     assist: true
     memory: true
     wimpy: true
+    randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['silence']
     lootable:
       currencies:
         золото:
@@ -421,11 +425,12 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
     capable:
-      skills: []
+      skills: ['bash']
       spells: []
     lootable:
       currencies:
@@ -458,6 +463,7 @@
     Судя по его самодовольному виду, бургомистр не привык отказывать себе ни в чем.
     Получив недавно этот пост (все его конкуренты бесследно исчезли), он окружил
     себя роскошью и шиком, а на проблемы города обращает совсем немного внимания.
+  quests: ['arlend:werewolf']
   attributes:
     health: 1000
     mana: 600
@@ -571,6 +577,7 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
@@ -578,7 +585,7 @@
       interval: 55
       areaRestricted: true
     capable:
-      skills: []
+      skills: ['bash']
       spells: []
     lootable:
       currencies:
@@ -670,12 +677,13 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: false
     assist: true
     memory: true
     wimpy: true
     capable:
-      skills: []
+      skills: ['hide']
       spells: []
     lootable:
       currencies:
@@ -721,11 +729,12 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
     capable:
-      skills: []
+      skills: ['hide']
       spells: []
     lootable:
       currencies:
@@ -766,13 +775,14 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
     wimpy: true
     capable:
       skills: []
-      spells: []
+      spells: ['heal']
     lootable:
       currencies:
         золото:
@@ -810,12 +820,13 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
     wimpy: true
     capable:
-      skills: []
+      skills: ['smite']
       spells: []
     lootable:
       currencies:
@@ -865,9 +876,10 @@
     assist: true
     memory: true
     wimpy: true
+    randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['acid']
     lootable:
       currencies:
         золото:
@@ -912,11 +924,12 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
     capable:
-      skills: []
+      skills: ['bash']
       spells: []
     lootable:
       currencies:
@@ -961,6 +974,7 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
@@ -968,7 +982,7 @@
       interval: 50
       areaRestricted: true
     capable:
-      skills: []
+      skills: ['bash']
       spells: []
     lootable:
       currencies:
@@ -1119,12 +1133,13 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
     capable:
-      skills: []
-      spells: []
+      skills: ['rend']
+      spells: ['fireball']
     lootable:
       currencies:
         золото:
@@ -1377,11 +1392,12 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
     capable:
-      skills: []
+      skills: ['smite']
       spells: []
     lootable:
       currencies:
@@ -1419,13 +1435,14 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     wander:
       interval: 65
       areaRestricted: true
     capable:
-      skills: []
-      spells: []
+      skills: ['rend']
+      spells: ['heal']
     lootable:
       currencies:
         золото:
@@ -1464,12 +1481,13 @@
     combat: true
     assist: true
     memory: true
+    randomspell: true
     wander:
       interval: 50
       areaRestricted: true
     capable:
       skills: []
-      spells: []
+      spells: ['paralysis']
     lootable:
       currencies:
         золото:
@@ -1506,6 +1524,7 @@
     mana_regeneration: 10
   behaviors:
     allattributes: 3
+    randomskill: true
     combat: true
     assist: true
     memory: true
@@ -1515,7 +1534,7 @@
         players: true
         npcs: false
     capable:
-      skills: []
+      skills: ['rend']
       spells: []
     lootable:
       currencies:
