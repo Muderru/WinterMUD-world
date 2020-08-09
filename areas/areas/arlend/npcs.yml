@@ -430,7 +430,7 @@
     assist: true
     memory: true
     capable:
-      skills: ['bash']
+      skills: ['bash', 'rescue']
       spells: []
     lootable:
       currencies:
@@ -585,7 +585,7 @@
       interval: 55
       areaRestricted: true
     capable:
-      skills: ['bash']
+      skills: ['bash', 'rescue']
       spells: []
     lootable:
       currencies:
@@ -929,7 +929,7 @@
     assist: true
     memory: true
     capable:
-      skills: ['bash']
+      skills: ['bash', 'rescue']
       spells: []
     lootable:
       currencies:
@@ -982,7 +982,7 @@
       interval: 50
       areaRestricted: true
     capable:
-      skills: ['bash']
+      skills: ['bash', 'rescue']
       spells: []
     lootable:
       currencies:

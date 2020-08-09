@@ -338,6 +338,7 @@
     преступных элементов.
   attributes:
     health: 500
+    mana: 200
     strength: 30
     agility: 30
     cutting_damage: 1
@@ -348,8 +349,8 @@
     assist: true
     memory: true
     capable:
-      skills: [ 'rend', 'lunge' ]
-      spells: [  ]
+      skills: ['rescue', 'lunge']
+      spells: []
     wander:
       interval: 30
       areaRestricted: true
@@ -547,8 +548,8 @@
     assist: true
     memory: true
     capable:
-      skills: [ 'rend' ]
-      spells: [ 'heal' ]
+      skills: ['rend', 'rescue']
+      spells: ['heal']
     leader:
       followers: [ 'gurba:guardian2', 'gurba:guardian2' ]
     wander:
@@ -595,8 +596,8 @@
     assist: true
     memory: true
     capable:
-      skills: [ 'lunge' ]
-      spells: [  ]
+      skills: ['lunge']
+      spells: []
     lootable:
       currencies:
         золото:

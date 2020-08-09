@@ -133,7 +133,7 @@
   npcs: [ "forvill:70514" ]
   script: 'alchemy'
   metadata:
-    commands: [ 'заправить' ]
+    commands: ['заправить']
     nomob: true
   items:
     - id: "forvill:70530"
