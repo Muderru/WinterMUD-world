@@ -14,6 +14,8 @@
       direction: юг
     - roomId: "crypt:850002"
       direction: восток
+    - roomId: "arlend:road5"
+      direction: запад
   doors:
     "crypt:850030":
       locked: false
@@ -96,6 +98,10 @@
     под большим цветным окном. На западе начинается подпираемый колоннами неф,
     а на север и юг ведут узкие проемы в стенах.
   light: 80
+  items:
+    - id: "crypt:850031"
+      respawnChance: 100
+      replaceOnRespawn: true
   exits:
     - roomId: "crypt:850007"
       direction: север
@@ -198,6 +204,10 @@
     отсюда ведет на запад, в темный коридор.
   light: 40
   npcs: ["crypt:850009"]
+  items:
+    - id: "crypt:850023"
+      respawnChance: 10
+      replaceOnRespawn: true
   exits:
     - roomId: "crypt:850011"
       direction: запад
@@ -209,6 +219,10 @@
     пыли, говорящим о том, что здесь редко кто бывает. Единственный выход отсюда
     ведет на восток, в темный коридор.
   light: 40
+  items:
+    - id: "crypt:850023"
+      respawnChance: 10
+      replaceOnRespawn: true
   exits:
     - roomId: "crypt:850011"
       direction: восток
@@ -243,6 +257,10 @@
     маленький букетик высохших цветов. На западе находится дверной проем, ведущий в
     центральный зал склепа.
   light: 40
+  items:
+    - id: "crypt:850023"
+      respawnChance: 10
+      replaceOnRespawn: true
   exits:
     - roomId: "crypt:850014"
       direction: запад
@@ -254,6 +272,10 @@
     грибы. Единственный выход ведет отсюда на восток.
   light: 40
   npcs: ["crypt:850009"]
+  items:
+    - id: "crypt:850023"
+      respawnChance: 10
+      replaceOnRespawn: true
   exits:
     - roomId: "crypt:850014"
       direction: восток
@@ -385,6 +407,10 @@
     авантюриста, забравшегося сюда в поисках сокровищ. Выход на западе ведет в темный
     коридор, а с севера дует подозрительный сквозняк.
   light: 20
+  items:
+    - id: "crypt:850023"
+      respawnChance: 10
+      replaceOnRespawn: true
   metadata:
     nomob: true
   exits:
@@ -502,6 +528,10 @@
     крыше, вы замечаете гнездо аиста, из которого доносится сердитый клекот.
   light: 60
   npcs: ["crypt:850013", "crypt:850015"]
+  items:
+    - id: "crypt:850039"
+      respawnChance: 100
+      replaceOnRespawn: true
   exits:
     - roomId: "crypt:850031"
       direction: вниз
@@ -675,6 +705,10 @@
     отсюда на север, в темный коридор.
   light: 80
   npcs: ["crypt:850021", "crypt:850021", "crypt:850022"]
+  items:
+    - id: "crypt:850032"
+      respawnChance: 10
+      replaceOnRespawn: true
   exits:
     - roomId: "crypt:850039"
       direction: север
@@ -783,6 +817,10 @@
     захоронения усопших. Их древние кости, время от времени, похрустывают
     под ногами.
   light: 20
+  items:
+    - id: "crypt:850056"
+      respawnChance: 100
+      replaceOnRespawn: true
   exits:
     - roomId: "crypt:850053"
       direction: север

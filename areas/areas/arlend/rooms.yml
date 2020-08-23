@@ -984,6 +984,8 @@
       direction: север
     - roomId: "arlend:road6"
       direction: юг
+    - roomId: "crypt:850001"
+      direction: восток
 - id: road6
   title: "Дорога вокруг холма"
   description: >-

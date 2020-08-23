@@ -1097,7 +1097,7 @@
   description: >-
     Этот древний саркофаг покрыт толстым слоем пыли, а его крышка сдвинута набок.
   keywords: ["саркофаг"]
-  items: []
+  items: ['crypt:850025', 'crypt:850024']
   closed: true
   locked: false
   maxItems: 5
@@ -1176,6 +1176,132 @@
   keywords: ["синяя", "слизь"]
   description: >-
     Ничем не примечательный комочек отвратительной синей слизи.
+  metadata:
+    sellable:
+      value: 50
+      currency: золото
+- id: 850045
+  name: "склизкий доспех"
+  rname: "склизкого доспеха"
+  dname: "склизкому доспеху"
+  vname: "склизкий доспех"
+  tname: "склизким доспехом"
+  pname: "склизком доспехе"
+  gender: "male"
+  type: ARMOR
+  roomDesc: "Покрытый слизью доспех валяется здесь."
+  keywords: ["склизкий", "доспех"]
+  description: >-
+    Этот великолепный доспех принадлежал когда-то известному герою, сгинувшему
+    в чреве безымянного монстра. Его слизь, кстати, до сих пор покрывает этот
+    доспех.
+  metadata:
+    quality: common
+    slot: "тело"
+    level: 30
+    itemLevel: 30
+    stats:
+      armor: 15
+      critical: 2
+      acid_damage: 3
+      health_regeneration: -5
+    sellable:
+      value: 250
+      currency: золото
+    requirements:
+      agility: 30
+      skills: ['medium_armor']
+- id: 850046
+  name: "склизкий пояс"
+  rname: "склизкого пояса"
+  dname: "склизкому поясу"
+  vname: "склизкий пояс"
+  tname: "склизким поясом"
+  pname: "склизком поясе"
+  gender: "male"
+  type: ARMOR
+  roomDesc: "Покрытый слизью пояс валяется здесь."
+  keywords: ["склизкий", "пояс"]
+  description: >-
+    Этот великолепный пояс принадлежал когда-то известному герою, сгинувшему
+    в чреве безымянного монстра. Его слизь, кстати, до сих пор покрывает этот
+    пояс.
+  metadata:
+    quality: common
+    slot: "пояс"
+    level: 30
+    itemLevel: 30
+    stats:
+      armor: 12
+      critical: 2
+      acid_damage: 2
+      health_regeneration: -5
+    sellable:
+      value: 200
+      currency: золото
+    requirements:
+      agility: 30
+      skills: ['medium_armor']
+- id: 850032
+  type: CONTAINER
+  name: "труп"
+  rname: "трупа"
+  dname: "трупу"
+  vname: "труп"
+  tname: "трупом"
+  pname: "трупе"
+  gender: "male"
+  roomDesc: "Труп бедняка в белых одеяниях лежит тут на столе."
+  description: >-
+    Этому трупу уже несколько дней и на нем заметны следы разложения.
+  keywords: ["труп"]
+  items: ['crypt:850034', 'crypt:850033', 'crypt:850035']
+  closed: true
+  locked: false
+  maxItems: 5
+  metadata:
+    noPickup: true
+- id: 850052
+  name: "флакон с кровью демона"
+  rname: "флакона с кровью демона"
+  dname: "флакону с кровью демона"
+  vname: "флакон с кровью демона"
+  tname: "флаконом с кровью демона"
+  pname: "флаконе с кровью демона"
+  gender: "male"
+  roomDesc: "Флакон с чей-то кровью валяется тут."
+  description: >-
+    Вы видите небольшой изящный флакон, до краев заполненный густой красно-черной кровью демона.
+  keywords: ["флакон", "кровь"]
+  type: POTION
+  metadata:
+    level: 25
+    usable:
+      effect: "potion.buff"
+      charges: 5
+      destroyOnDepleted: true
+      config:
+        description: "Увеличивает скорость атаки на <b>10%</b> в течении <b>15</b> секунд."
+        duration: 15000
+      state:
+        magnitude: 10
+        stat: "swift"
+    sellable:
+      value: 100
+      currency: золото
+- id: 850055
+  type: RESOURCE
+  name: "ядовитая слизь"
+  rname: "ядовитой слизи"
+  dname: "ядовитой слизи"
+  vname: "ядовитую слизь"
+  tname: "ядовитой слизью"
+  pname: "ядовитой слизи"
+  gender: "female"
+  roomDesc: "Комочек ядовитой слизи валяется тут."
+  keywords: ["ядовитая", "слизь"]
+  description: >-
+    Ничем не примечательный комочек отвратительной ядовитой слизи.
   metadata:
     sellable:
       value: 50

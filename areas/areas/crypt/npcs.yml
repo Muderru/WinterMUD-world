@@ -33,14 +33,14 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['defense_curse', 'poison', 'silence']
     lootable:
       currencies:
         золото:
           min: 100
           max: 200
       pools:
-        - "fortavern:80120": 20
+        - "crypt:850001": 40
 - id: 850004
   keywords: ["лорд", "генрих"]
   level: 30
@@ -75,15 +75,17 @@
     combat: true
     randomspell: true
     capable:
-      skills: []
-      spells: []
+      skills: ['parry']
+      spells: ['heal', 'ice_peak']
     lootable:
       currencies:
         золото:
           min: 100
           max: 200
       pools:
-        - "fortavern:80120": 20
+        - "crypt:850010": 30
+        - "crypt:850007": 30
+        - "crypt:850003": 30
 - id: 850014
   keywords: ["некромант"]
   level: 30
@@ -118,14 +120,14 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['defense_curse', 'paralysis']
     lootable:
       currencies:
         золото:
           min: 100
           max: 200
       pools:
-        - "fortavern:80120": 20
+        - "crypt:850013": 100
 - id: 850019
   keywords: ["авантюрист"]
   level: 26
@@ -159,7 +161,7 @@
       interval: 60
       areaRestricted: true
     capable:
-      skills: []
+      skills: ['lunge', 'bash']
       spells: []
     lootable:
       currencies:
@@ -167,7 +169,7 @@
           min: 20
           max: 60
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850015": 25
 - id: 850015
   keywords: ["большой", "аист"]
   level: 26
@@ -187,6 +189,7 @@
     Вы видите большую белую птицу с длинным острым клювом. Видимо, звонарь
     подкармливал аиста долгие годы, поэтому эта птица совершенно не боится
     людей и готова при необходимости постоять за себя.
+  script: 'stork'
   attributes:
     health: 1100
     mana: 550
@@ -198,7 +201,7 @@
     assist: true
     randomskill: true
     capable:
-      skills: []
+      skills: ['lunge', 'rend']
       spells: []
     lootable:
       currencies:
@@ -206,7 +209,7 @@
           min: 20
           max: 60
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850011": 100
 - id: 850001
   keywords: ["викарий"]
   level: 27
@@ -227,10 +230,17 @@
     добродушная улыбка. Он, вероятно, считает, что уже обеспечил себе место в
     раю, и какие бы злоключения не выпали на его жизнь, Бог наградит его за
     все сполна.
+  script: 'vicar'
+  quests: ['crypt:850001', 'crypt:850002', 'crypt:850003', 'crypt:850004']
   attributes:
     health: 1100
     mana: 550
     armor: 7
+  metadata:
+    trainer:
+      skill: 'parry'
+      cost: 3
+      requirements: []
   behaviors:
     allattributes: 3
     combat: true
@@ -238,15 +248,17 @@
     assist: true
     randomskill: true
     capable:
-      skills: []
-      spells: []
+      skills: ['parry']
+      spells: ['heal', 'lightning']
     lootable:
       currencies:
         золото:
           min: 30
           max: 70
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850002": 15
+        - "crypt:850012": 15
+        - "crypt:850036": 100
 - id: 850016
   keywords: ["гуль"]
   level: 28
@@ -284,15 +296,15 @@
         npcs: false
     randomspell: true
     capable:
-      skills: []
-      spells: []
+      skills: ['bash']
+      spells: ['poison']
     lootable:
       currencies:
         золото:
           min: 40
           max: 90
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850014": 20
 - id: 850027
   keywords: ["демон", "призыватель"]
   level: 29
@@ -325,14 +337,15 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['defense_curse', 'paralysis']
     lootable:
       currencies:
         золото:
           min: 40
           max: 90
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850049": 25
+        - "crypt:850052": 25
 - id: 850013
   keywords: ["звонарь"]
   level: 27
@@ -365,14 +378,14 @@
     randomskill: true
     capable:
       skills: []
-      spells: []
+      spells: ['heal', 'silence']
     lootable:
       currencies:
         золото:
           min: 30
           max: 70
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850004": 25
 - id: 850024
   keywords: ["зеленая", "слизь"]
   level: 29
@@ -409,14 +422,14 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['poison', 'defense_curse']
     lootable:
       currencies:
         золото:
           min: 45
           max: 95
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850053": 15
 - id: 850007
   keywords: ["зомби"]
   level: 28
@@ -450,7 +463,7 @@
         npcs: false
     randomspell: true
     capable:
-      skills: []
+      skills: ['bash', 'smite']
       spells: []
     lootable:
       currencies:
@@ -458,7 +471,7 @@
           min: 40
           max: 90
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850008": 20
 - id: 850017
   keywords: ["зомби", "дракон"]
   level: 30
@@ -492,8 +505,8 @@
     combat: true
     randomspell: true
     capable:
-      skills: []
-      spells: []
+      skills: ['bash', 'smite']
+      spells: ['defense']
     lootable:
       currencies:
         золото:
@@ -537,7 +550,7 @@
         npcs: false
     randomspell: true
     capable:
-      skills: []
+      skills: ['rend', 'parry']
       spells: []
     lootable:
       currencies:
@@ -569,6 +582,11 @@
     health: 1200
     mana: 800
     armor: 8
+  metadata:
+    trainer:
+      spell: 'defense'
+      cost: 2
+      requirements: ['spell_heal']
   behaviors:
     allattributes: 4
     memory: true
@@ -577,14 +595,16 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['defense', 'paralysis', 'heal']
     lootable:
       currencies:
         золото:
           min: 100
           max: 200
       pools:
-        - "fortavern:80120": 20
+        - "crypt:850037": 30
+        - "crypt:850041": 30
+        - "crypt:850040": 30
 - id: 850028
   keywords: ["мелкий", "бес"]
   level: 29
@@ -618,14 +638,14 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['lightning', 'fireball']
     lootable:
       currencies:
         золото:
           min: 40
           max: 90
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850051": 25
 - id: 850030
   keywords: ["многоглазое", "чудовище"]
   level: 30
@@ -658,15 +678,17 @@
     combat: true
     randomspell: true
     capable:
-      skills: []
-      spells: []
+      skills: ['parry']
+      spells: ['defense', 'poison']
     lootable:
       currencies:
         золото:
           min: 100
           max: 200
       pools:
-        - "fortavern:80120": 20
+        - "crypt:850045": 40
+        - "crypt:850046": 40
+        - "crypt:850059": 100
 - id: 850009
   keywords: ["могильная", "змея"]
   level: 28
@@ -700,8 +722,8 @@
         npcs: false
     randomspell: true
     capable:
-      skills: []
-      spells: []
+      skills: ['hide']
+      spells: ['poison']
     lootable:
       currencies:
         золото:
@@ -745,8 +767,8 @@
         npcs: false
     randomspell: true
     capable:
-      skills: []
-      spells: []
+      skills: ['rescue']
+      spells: ['poison']
     lootable:
       currencies:
         золото:
@@ -783,14 +805,14 @@
     randomskill: true
     capable:
       skills: []
-      spells: []
+      spells: ['heal', 'defense']
     lootable:
       currencies:
         золото:
           min: 30
           max: 70
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850038": 15
 - id: 850002
   keywords: ["монашка"]
   level: 25
@@ -825,14 +847,14 @@
       areaRestricted: true
     capable:
       skills: []
-      spells: []
+      spells: ['heal', 'plea']
     lootable:
       currencies:
         золото:
           min: 30
           max: 60
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850005": 20
 - id: 850006
   keywords: ["мумия"]
   level: 29
@@ -866,15 +888,15 @@
         npcs: false
     randomspell: true
     capable:
-      skills: []
-      spells: []
+      skills: ['rescue']
+      spells: ['defense_curse']
     lootable:
       currencies:
         золото:
           min: 40
           max: 90
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850009": 25
 - id: 850012
   keywords: ["призрак"]
   level: 29
@@ -913,7 +935,7 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['invisibility', 'lightning']
     lootable:
       currencies:
         золото:
@@ -950,7 +972,7 @@
     assist: true
     randomskill: true
     capable:
-      skills: []
+      skills: ['judge', 'shieldblock']
       spells: []
     lootable:
       currencies:
@@ -996,14 +1018,14 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['defense_curse', 'defense']
     lootable:
       currencies:
         золото:
           min: 45
           max: 95
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850054": 20
 - id: 850026
   keywords: ["рогатый", "демон"]
   level: 29
@@ -1041,7 +1063,7 @@
         npcs: false
     randomspell: true
     capable:
-      skills: []
+      skills: ['rescue', 'shieldblock']
       spells: []
     lootable:
       currencies:
@@ -1049,7 +1071,7 @@
           min: 45
           max: 155
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850050": 25
 - id: 850020
   keywords: ["садовник"]
   level: 25
@@ -1084,7 +1106,7 @@
       interval: 45
       areaRestricted: true
     capable:
-      skills: []
+      skills: ['parry', 'judge']
       spells: []
     lootable:
       currencies:
@@ -1092,7 +1114,7 @@
           min: 30
           max: 60
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850016": 20
 - id: 850005
   keywords: ["скелет"]
   level: 28
@@ -1130,7 +1152,7 @@
         npcs: false
     randomspell: true
     capable:
-      skills: []
+      skills: ['rend', 'parry']
       spells: []
     lootable:
       currencies:
@@ -1138,7 +1160,7 @@
           min: 40
           max: 90
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850006": 20
 - id: 850031
   keywords: ["суккуб", "лилит"]
   level: 30
@@ -1173,14 +1195,16 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['fireball', 'acid', 'defense_curse']
     lootable:
       currencies:
         золото:
           min: 100
           max: 200
       pools:
-        - "fortavern:80120": 20
+        - "crypt:850044": 40
+        - "crypt:850043": 40
+        - "crypt:850057": 100
 - id: 850029
   keywords: ["червь"]
   level: 30
@@ -1214,15 +1238,17 @@
     combat: true
     randomspell: true
     capable:
-      skills: []
-      spells: []
+      skills: ['bash']
+      spells: ['acid', 'poison']
     lootable:
       currencies:
         золото:
           min: 100
           max: 200
       pools:
-        - "fortavern:80120": 20
+        - "crypt:850047": 40
+        - "crypt:850048": 35
+        - "crypt:850058": 100
 - id: 850011
   keywords: ["чумная", "крыса"]
   level: 25
@@ -1260,7 +1286,7 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['poison', 'acid']
     lootable:
       currencies:
         золото:
@@ -1304,11 +1330,11 @@
     randomspell: true
     capable:
       skills: []
-      spells: []
+      spells: ['acid', 'poison']
     lootable:
       currencies:
         золото:
           min: 30
           max: 60
       pools:
-        - "fortavern:80107": 10
+        - "crypt:850055": 20
