@@ -1256,7 +1256,7 @@
     Этому трупу уже несколько дней и на нем заметны следы разложения.
   keywords: ["труп"]
   items: ['crypt:850034', 'crypt:850033', 'crypt:850035']
-  closed: true
+  closed: false
   locked: false
   maxItems: 5
   metadata:
@@ -1306,3 +1306,30 @@
     sellable:
       value: 50
       currency: золото
+- id: 850056
+  name: "щит из костей дракона"
+  rname: "щита из костей дракона"
+  dname: "щиту из костей дракона"
+  vname: "щит из костей дракона"
+  tname: "щитом из костей дракона"
+  pname: "щите из костей дракона"
+  gender: "male"  
+  type: ARMOR
+  roomDesc: "Щит из костей лежит здесь."
+  keywords: ["щит", "костяной"]
+  description: "Этот щит сделан из прочнейших драконьих костей, которые не проломит ни железо, ни сталь."
+  metadata:
+    quality: common
+    slot: "щит"
+    level: 30
+    itemLevel: 30
+    stats:
+      armor: 18
+      cutting_resistance: 2
+      crushing_resistance: 2
+    sellable:
+      value: 200
+      currency: золото
+    requirements:
+      stamina: 35
+      skills: ['heavy_armor']

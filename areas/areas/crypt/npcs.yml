@@ -513,7 +513,7 @@
           min: 100
           max: 200
       pools:
-        - "fortavern:80120": 20
+        - "crypt:850056": 60
 - id: 850008
   keywords: ["летучая", "мышь"]
   level: 28
@@ -557,8 +557,6 @@
         золото:
           min: 40
           max: 90
-      pools:
-        - "fortavern:80107": 10
 - id: 850022
   keywords: ["мать", "настоятельница"]
   level: 30
@@ -729,8 +727,6 @@
         золото:
           min: 40
           max: 90
-      pools:
-        - "fortavern:80107": 10
 - id: 850010
   keywords: ["могильный", "скорпион"]
   level: 28
@@ -774,8 +770,6 @@
         золото:
           min: 40
           max: 90
-      pools:
-        - "fortavern:80107": 10
 - id: 850021
   keywords: ["молчаливая", "монахиня"]
   level: 27
@@ -941,8 +935,6 @@
         золото:
           min: 40
           max: 90
-      pools:
-        - "fortavern:80107": 10
 - id: 850018
   keywords: ["прихожанин"]
   level: 25
@@ -979,8 +971,6 @@
         золото:
           min: 30
           max: 60
-      pools:
-        - "fortavern:80107": 10
 - id: 850025
   keywords: ["пятнистая", "слизь"]
   level: 29
@@ -1292,8 +1282,6 @@
         золото:
           min: 30
           max: 60
-      pools:
-        - "fortavern:80107": 10
 - id: 850023
   keywords: ["ядовитая", "слизь"]
   level: 25

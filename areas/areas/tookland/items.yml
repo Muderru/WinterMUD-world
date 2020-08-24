@@ -74,7 +74,7 @@
       currency: золото
     requirements:
       stamina: 20
-      skills: [ 'light_armor' ]
+      skills: ['light_armor']
 - id: 34704
   name: "рваная куртка"
   rname: "рваной куртки"
@@ -85,7 +85,7 @@
   gender: "female"
   type: ARMOR
   roomDesc: "Рваная куртка лежит тут."
-  keywords: ["шляпа"]
+  keywords: ["куртка", "рваная"]
   description: >-
     Эта куртка изодрана в клочья чьими-то острыми когтями, так что вряд ли она защитит вас от оружия врагов 
     или даже непогоды. В добавок, в ней вы будете выглядеть очень непривлекательно.
@@ -102,7 +102,7 @@
       currency: золото
     requirements:
       stamina: 20
-      skills: [ 'light_armor' ]
+      skills: ['light_armor']
 - id: 34705
   type: RESOURCE
   name: "орлиное перо"
@@ -168,7 +168,7 @@
       currency: золото
     requirements:
       strength: 20
-      skills: [ 'polearms' ]
+      skills: ['polearms']
 - id: 34708
   name: "древний амулет"
   rname: "древнего амулета"
@@ -261,7 +261,7 @@
       currency: золото
     requirements:
       strength: 20
-      skills: [ 'staves' ]
+      skills: ['staves']
 - id: 34712
   type: RESOURCE
   name: "кусочек гривы"
@@ -380,7 +380,7 @@
       currency: золото
     requirements:
       stamina: 20
-      skills: [ 'medium_armor' ]
+      skills: ['medium_armor']
 - id: 34719
   name: "водяное колесо"
   rname: "водяного колеса"
