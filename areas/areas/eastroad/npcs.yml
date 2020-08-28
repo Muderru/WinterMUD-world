@@ -248,6 +248,10 @@
   script: "crazy"
   metadata:
     accepts: ['eastroad:10911']
+    trainer:
+      spell: 'blind'
+      cost: 4
+      requirements: []
   behaviors:
     allattributes: 1
     combat: true
@@ -423,6 +427,10 @@
   script: "ring"
   metadata:
     accepts: ['eastroad:10910']
+    trainer:
+      skill: 'stab'
+      cost: 3
+      requirements: ['skill_daggers']
   behaviors:
     allattributes: 1
     combat: true
