@@ -913,7 +913,7 @@
       cost: 3
       requirements: [ ]
 - id: hiding_thief
-  keywords: [ 'маг', 'странствующий' ]
+  keywords: [ 'вор', 'скрывающийся' ]
   level: 13
   name: "скрывающийся вор"
   rname: "скрывающегося вора"
