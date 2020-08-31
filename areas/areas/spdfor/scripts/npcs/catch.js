@@ -13,7 +13,7 @@ module.exports = {
           if (target.isInCombat()) {
             return;
           }
-          Broadcast.sayAt(room, 'Вас что-то потащило вверх!');
+          Broadcast.sayAt(target, 'Вас что-то потащило вверх!');
           Broadcast.sayAtExcept(room, `${target.Vname} что-то потащило вверх.`, target);
           target.moveTo(this.room);
           this.initiateCombat(target);
@@ -26,7 +26,7 @@ module.exports = {
           if (target.isInCombat()) {
             return;
           }
-          Broadcast.sayAt(room, 'Вас что-то потащило вверх!');
+          Broadcast.sayAt(target, 'Вас что-то потащило вверх!');
           Broadcast.sayAtExcept(room, `${target.Vname} что-то потащило вверх.`, target);
           target.moveTo(this.room);
           this.initiateCombat(target);
@@ -39,7 +39,7 @@ module.exports = {
           if (target.isInCombat()) {
             return;
           }
-          Broadcast.sayAt(room, 'Вас что-то потащило вверх!');
+          Broadcast.sayAt(target, 'Вас что-то потащило вверх!');
           Broadcast.sayAtExcept(room, `${target.Vname} что-то потащило вверх.`, target);
           target.moveTo(this.room);
           this.initiateCombat(target);
@@ -52,7 +52,7 @@ module.exports = {
           if (target.isInCombat()) {
             return;
           }
-          Broadcast.sayAt(room, 'Вас что-то потащило вверх!');
+          Broadcast.sayAt(target, 'Вас что-то потащило вверх!');
           Broadcast.sayAtExcept(room, `${target.Vname} что-то потащило вверх.`, target);
           target.moveTo(this.room);
           this.initiateCombat(target);
