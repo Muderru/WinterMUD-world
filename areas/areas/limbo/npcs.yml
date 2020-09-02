@@ -44,6 +44,11 @@
   level: 99
   script: 'old-man'
   description: "На земле со скрещенными ногами сидит седой старик. В глазах его светится мудрость."
+  metadata:
+    trainer:
+      spell: 'bless'
+      cost: 4
+      requirements: ['spell_plea']
 - id: puppy
   keywords: ["щенок", "собака", "милый", "большеглазый"]
   name: "щенок"
