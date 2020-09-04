@@ -16,6 +16,7 @@
   description: >-
     Вы видите грязного, оборванного нищего покрытого толстым слоем грязи и
     источающего неповторимый аромат.
+  script: 'beggar'
   attributes:
     health: 1000
     mana: 500
@@ -30,7 +31,7 @@
     assist: true
     randomskill: true
     capable:
-      skills: ['parry', 'judge']
+      skills: ['parry', 'lunge']
       spells: []
     lootable:
       currencies:
@@ -59,6 +60,7 @@
     Вы видите полного мужчину средних лет в черных одеяниях - форменной
     одежде палача. Судя по его бегающему взгляду, устроился он на эту работу
     совсем недавно, а до этого был, скорее всего, мясником.
+  script: 'combathelp'
   attributes:
     health: 1000
     mana: 500
@@ -98,6 +100,7 @@
     Вы видите скучающего представителя среднего класса, пришедшего сюда в
     поисках острых ощущений. Он с нетерпением поглядывает в сторону плахи,
     так сильно хочет увидеть воочию процесс обезглавливания.
+  script: 'combathelp'
   attributes:
     health: 1000
     mana: 500
@@ -112,8 +115,8 @@
       interval: 45
       areaRestricted: true
     capable:
-      skills: ['parry', 'judge']
-      spells: []
+      skills: ['parry']
+      spells: ['acid']
     lootable:
       currencies:
         золото:
@@ -139,12 +142,14 @@
   description: >-
     Что заставило прийти сюда этого человека, сказать сложно, его бегающий
     взгляд как будто выискивает что-то, хотя может он просто ищет знакомых в толпе.
+  script: 'combathelp'
   attributes:
     health: 1100
     mana: 550
     armor: 7
+    critical: 5
   behaviors:
-    allattributes: 3
+    allattributes: 1
     combat: true
     memory: true
     assist: true
@@ -153,8 +158,8 @@
       interval: 55
       areaRestricted: true
     capable:
-      skills: []
-      spells: ['heal', 'defense']
+      skills: ['hide', 'stab']
+      spells: []
     lootable:
       currencies:
         золото:
@@ -182,6 +187,7 @@
     Этот толстый важный чиновник в пестрых одеждах громко выкрикивает имена
     провинившихся и преступления, в которых они признаны виновными. Видно, что
     он очень горд своей работой и до всего остального ему нет дела.
+  script: 'combathelp'
   attributes:
     health: 1100
     mana: 550
@@ -194,7 +200,7 @@
     randomskill: true
     capable:
       skills: []
-      spells: ['heal', 'defense']
+      spells: ['defense_curse', 'blind']
     lootable:
       currencies:
         золото:
@@ -235,8 +241,8 @@
       interval: 55
       areaRestricted: true
     capable:
-      skills: []
-      spells: ['heal', 'defense']
+      skills: ['rescue', 'smite']
+      spells: []
     lootable:
       currencies:
         золото:
@@ -263,6 +269,7 @@
     Эта красивая южанка в разноцветных одеждах с лукавством поглядывает на вас,
     как будто оценивая, стоит ли с вами познакомиться поближе. До всего
     остального, происходящего на площади, ей как будто нет дела.
+  script: 'flirt'
   attributes:
     health: 1000
     mana: 500
@@ -272,13 +279,13 @@
     combat: true
     memory: true
     assist: true
-    randomskill: true
+    randomspell: true
     wander:
       interval: 50
       areaRestricted: true
     capable:
-      skills: ['parry', 'judge']
-      spells: []
+      skills: []
+      spells: ['paralysis', 'lightning']
     lootable:
       currencies:
         золото:
@@ -320,8 +327,8 @@
     assist: true
     randomskill: true
     capable:
-      skills: []
-      spells: ['heal', 'defense']
+      skills: ['rescue', 'rend']
+      spells: []
     lootable:
       currencies:
         золото:
@@ -349,6 +356,7 @@
     измазаны пятнами чернил. Смысл жизни этого человека состоит в перекладывании
     бумажек с места на место, и без официального документа к нему лучше не подходить.
     К сожалению, дел на него навесили так много, что он едва справляется.
+  script: 'scribe'
   attributes:
     health: 1100
     mana: 550
@@ -358,10 +366,10 @@
     combat: true
     memory: true
     assist: true
-    randomskill: true
+    randomspell: true
     capable:
       skills: []
-      spells: ['heal', 'defense']
+      spells: ['heal', 'plea']
     lootable:
       currencies:
         золото:
@@ -388,6 +396,7 @@
     Этот человек поучаствовал на своем веку во многих сражениях, благодаря
     чему его характер стал несгибаемым. Капитан стражи - известный борец с
     несправедливостью и преступностью, он готов убить за малейшее прегрешение.
+  script: 'combathelp'
   attributes:
     health: 1200
     mana: 800
@@ -399,8 +408,8 @@
     combat: true
     randomspell: true
     capable:
-      skills: ['parry']
-      spells: ['heal', 'ice_peak']
+      skills: ['parry', 'bash']
+      spells: []
     lootable:
       currencies:
         золото:
@@ -429,6 +438,7 @@
     напудренном лицом. Всю жизнь он изучал многочисленные противоречивые
     законы, из-за чего его характер стал вздорным и несдержанным. Однако,
     когда дело кажется запутанным его решения мудры и продуманны.
+  script: 'judge'
   attributes:
     health: 1200
     mana: 800
@@ -440,8 +450,8 @@
     combat: true
     randomspell: true
     capable:
-      skills: ['parry']
-      spells: ['heal', 'ice_peak']
+      skills: []
+      spells: ['silence', 'ice_peak']
     lootable:
       currencies:
         золото:
@@ -519,8 +529,8 @@
     memory: true
     randomskill: true
     capable:
-      skills: []
-      spells: ['heal', 'defense']
+      skills: ['lunge', 'rend']
+      spells: []
     lootable:
       currencies:
         золото:
@@ -558,8 +568,8 @@
     assist: true
     randomskill: true
     capable:
-      skills: []
-      spells: ['heal', 'defense']
+      skills: ['rescue', 'bash']
+      spells: []
     lootable:
       currencies:
         золото:
@@ -597,8 +607,8 @@
     assist: true
     randomskill: true
     capable:
-      skills: []
-      spells: ['heal', 'defense']
+      skills: ['lunge']
+      spells: ['heal']
     lootable:
       currencies:
         золото:
@@ -636,7 +646,7 @@
     randomskill: true
     capable:
       skills: []
-      spells: ['heal', 'defense']
+      spells: ['blind', 'defense']
     lootable:
       currencies:
         золото:
@@ -667,8 +677,9 @@
     health: 1100
     mana: 550
     armor: 7
+    critical: 5
   behaviors:
-    allattributes: 3
+    allattributes: 1
     combat: true
     aggro:
       delay: 1
@@ -677,8 +688,8 @@
         npcs: false
     randomskill: true
     capable:
-      skills: []
-      spells: ['heal', 'defense']
+      skills: ['smite']
+      spells: ['weakness']
     lootable:
       currencies:
         золото:
@@ -706,6 +717,7 @@
     своей необычностью далеко за пределами своего города. Однако он готов
     работать за гроши на чистом энтузиазме, что компенсирует его тягу к
     экстремальным экспериментам.
+  script: 'combathelp'
   attributes:
     health: 1100
     mana: 550
@@ -721,7 +733,7 @@
       areaRestricted: true
     capable:
       skills: []
-      spells: ['heal', 'defense']
+      spells: ['paralysis', 'poison']
     lootable:
       currencies:
         золото:
@@ -730,7 +742,7 @@
       pools:
         - "court:40220": 30
 - id: 40218
-  keywords: ["праздный", "зевака"]
+  keywords: ["ленивый", "уборщик"]
   level: 25
   name: "ленивый уборщик"
   rname: "ленивого уборщика"
@@ -746,6 +758,7 @@
   travelVerbOut: "ушёл"
   description: >-
     Вы видите самого обычного представителя не самой престижной профессии.
+  script: 'combathelp'
   attributes:
     health: 1000
     mana: 500
@@ -760,7 +773,7 @@
       interval: 45
       areaRestricted: true
     capable:
-      skills: ['parry', 'judge']
+      skills: ['smite', 'judge']
       spells: []
     lootable:
       currencies:
@@ -791,6 +804,8 @@
     health: 1100
     mana: 550
     armor: 7
+    detect_invisibility: 10
+    detect_hide: 10
   behaviors:
     allattributes: 3
     combat: true
@@ -802,7 +817,7 @@
     randomskill: true
     capable:
       skills: []
-      spells: ['heal', 'defense']
+      spells: ['weakness', 'defense_curse']
     lootable:
       currencies:
         золото:
@@ -846,8 +861,8 @@
       interval: 45
       areaRestricted: true
     capable:
-      skills: ['parry', 'judge']
-      spells: []
+      skills: []
+      spells: ['fireball', 'silence']
     lootable:
       currencies:
         золото:
@@ -888,7 +903,7 @@
       interval: 45
       areaRestricted: true
     capable:
-      skills: ['parry', 'judge']
+      skills: ['parry', 'rend']
       spells: []
     lootable:
       currencies:
@@ -930,8 +945,8 @@
       interval: 45
       areaRestricted: true
     capable:
-      skills: ['parry', 'judge']
-      spells: []
+      skills: ['bash']
+      spells: ['bless']
     lootable:
       currencies:
         золото:
@@ -957,17 +972,23 @@
     хранит остатки своей роскоши. Видимо ее обладатель занимал раньше довольно
     высокое положение в обществе, хотя сейчас любой желающий может запустить в
     него гнилым помидором.
+  quests: ['court:40201', 'court:40202']
   attributes:
     health: 1100
     mana: 550
     armor: 7
   behaviors:
     allattributes: 3
-    combat: true
+    combat: false
     randomskill: true
     capable:
       skills: []
       spells: ['heal', 'defense']
+  metadata:
+    trainer:
+      skill: "bash"
+      cost: 4
+      requirements: ['skill_heavy_armor']
     lootable:
       currencies:
         золото:
@@ -1007,8 +1028,8 @@
     combat: true
     randomspell: true
     capable:
-      skills: ['parry']
-      spells: ['heal', 'ice_peak']
+      skills: ['rend', 'smite']
+      spells: ['silence']
     lootable:
       currencies:
         золото:
@@ -1049,7 +1070,7 @@
     randomspell: true
     capable:
       skills: ['parry']
-      spells: ['heal', 'ice_peak']
+      spells: ['paralysis', 'bless']
     lootable:
       currencies:
         золото:
@@ -1058,6 +1079,7 @@
       pools:
         - "court:40227": 30
         - "court:40228": 30
+        - "court:40243": 30
 - id: 40226
   keywords: ["охранник"]
   level: 27
@@ -1077,6 +1099,7 @@
     Вы видите перед собой немолодого вояку, повидавшему на своем веку немало
     сражений. Несомненно, что он способен дать отпор любому решившемуся
     нарушить порядок на площади, и сурово наказать его.
+  script: 'guard'
   attributes:
     health: 1100
     mana: 550
@@ -1091,8 +1114,8 @@
       interval: 55
       areaRestricted: true
     capable:
-      skills: []
-      spells: ['heal', 'defense']
+      skills: ['rescue']
+      spells: ['defense']
     lootable:
       currencies:
         золото:
@@ -1132,8 +1155,8 @@
     combat: true
     randomspell: true
     capable:
-      skills: ['parry']
-      spells: ['heal', 'ice_peak']
+      skills: ['shieldblock', 'rescue']
+      spells: ['heal']
     lootable:
       currencies:
         золото:
@@ -1176,8 +1199,8 @@
     combat: true
     randomspell: true
     capable:
-      skills: ['parry']
-      spells: ['heal', 'ice_peak']
+      skills: ['parry', 'judge']
+      spells: ['defense_curse']
     lootable:
       currencies:
         золото:
@@ -1250,8 +1273,8 @@
     Это существо было создано посредством магии из различного хлама: стульев,
     канделябров, книг, подушек и прочего мусора, который валялся поблизости.
   attributes:
-    health: 800
-    mana: 800
+    health: 750
+    mana: 600
     armor: 60
   behaviors:
     allattributes: 4
@@ -1261,7 +1284,7 @@
     randomspell: true
     area_decay: true
     capable:
-      skills: ['rescue', 'rend']
+      skills: ['rescue', 'smite']
       spells: []
     lootable:
       currencies:
@@ -1288,6 +1311,7 @@
     через его руки прошли сотни папок с самими страшными преступлениями,
     которые многие желали бы уничтожить навсегда. Поэтому неудивительно, что
     смотритель зорко присматривает за своими стеллажами и сундуками.
+  script: 'combathelp'
   attributes:
     health: 1200
     mana: 800
@@ -1299,8 +1323,13 @@
     combat: true
     randomspell: true
     capable:
-      skills: ['parry']
-      spells: ['heal', 'ice_peak']
+      skills: []
+      spells: ['heal', 'fireball', 'paralysis']
+  metadata:
+    trainer:
+      spell: "bash"
+      cost: 3
+      requirements: ['spell_defense_curse']
     lootable:
       currencies:
         золото:
@@ -1340,13 +1369,15 @@
       interval: 55
       areaRestricted: true
     capable:
-      skills: []
-      spells: ['heal', 'defense']
+      skills: ['rescue', 'lunge']
+      spells: ['defense_curse']
     lootable:
       currencies:
         золото:
           min: 30
           max: 70
+      pools:
+        - "court:40252": 30
 - id: 40233
   keywords: ["размокший", "труп"]
   level: 27
@@ -1380,7 +1411,7 @@
     randomskill: true
     capable:
       skills: []
-      spells: ['heal', 'defense']
+      spells: ['acid', 'poison']
     lootable:
       currencies:
         золото:
@@ -1389,7 +1420,7 @@
       pools:
         - "court:40222": 30
 - id: 40234
-  keywords: ["грязный", "нищий"]
+  keywords: ["жирный", "ворон"]
   level: 25
   name: "жирный ворон"
   rname: "жирного ворона"
@@ -1416,7 +1447,7 @@
     memory: true
     randomskill: true
     capable:
-      skills: ['parry', 'judge']
+      skills: ['lunge', 'rend']
       spells: []
     lootable:
       currencies:

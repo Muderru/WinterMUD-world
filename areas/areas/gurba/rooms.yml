@@ -766,6 +766,8 @@
       direction: восток
     - roomId: "gurba:market3"
       direction: запад
+    - roomId: "court:40200"
+      direction: юг
 - id: market3
   title: "Рыночная площадь"
   description: >-

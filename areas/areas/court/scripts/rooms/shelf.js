@@ -1,4 +1,4 @@
-const { Broadcast } = require('ranvier');
+const { Broadcast, Damage } = require('ranvier');
 
 module.exports = {
   listeners: {
@@ -31,12 +31,12 @@ module.exports = {
         if (shelf && lever1 && lever2) {
           player.room.exits.push({ roomId: 'court:40255', direction: 'север', inferred: true });
           Broadcast.sayAt(player, 'Вы нажали на красный корешок и в шкафу открылась потайная дверь.');
-          Broadcast.sayAtExcept(player.room, `${actor.Name} нажал${ending} на красный корешок и в шкафу открылась потайная дверь.`, player);
+          Broadcast.sayAtExcept(player.room, `${player.Name} нажал${ending} на красный корешок и в шкафу открылась потайная дверь.`, player);
           player.room.spawnItem(state, 'court:40242');
           return player.room.removeItem(shelf);
         } else {
           Broadcast.sayAt(player, 'Вы нажали что-то не так и в комнате сработала ловушка.');
-          Broadcast.sayAtExcept(player.room, `${actor.Name} нажал${ending} что-то не так и в комнате сработала ловушка.`, player);
+          Broadcast.sayAtExcept(player.room, `${player.Name} нажал${ending} что-то не так и в комнате сработала ловушка.`, player);
           Broadcast.sayAt(player.room, 'Со всех сторон в вас полетели острые дротики.');
           for (const pc of player.room.players) {
             const damage = new Damage('health', Math.random() * 100, null, this);
@@ -45,7 +45,7 @@ module.exports = {
         }
       } else {
         Broadcast.sayAt(player, 'Вы нажали что-то не так и в комнате сработала ловушка.');
-        Broadcast.sayAtExcept(player.room, `${actor.Name} нажал${ending} что-то не так и в комнате сработала ловушка.`, player);
+        Broadcast.sayAtExcept(player.room, `${player.Name} нажал${ending} что-то не так и в комнате сработала ловушка.`, player);
         Broadcast.sayAt(player.room, 'Со всех сторон в вас полетели острые дротики.');
         for (const pc of player.room.players) {
           const damage = new Damage('health', Math.random() * 100, null, this);

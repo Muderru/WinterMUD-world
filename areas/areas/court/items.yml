@@ -819,8 +819,9 @@
     itemLevel: 30
     stats:
       chaos_resistance: 2
-      acid_resistance: 2
+      acid_resistance: 1
       fire_resistance: 1
+      light: 5
     sellable:
       value: 200
       currency: золото
@@ -1558,7 +1559,7 @@
   description: >-
     Этого человека убили несколько дней назад.
   keywords: ["останки"]
-  items: []
+  items: ['court:40261']
   closed: false
   locked: false
   maxItems: 5

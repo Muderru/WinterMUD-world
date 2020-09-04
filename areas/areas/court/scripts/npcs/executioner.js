@@ -1,4 +1,4 @@
-const { Broadcast } = require('ranvier');
+const { Broadcast, Damage } = require('ranvier');
 
 module.exports = {
   listeners: {

@@ -28,7 +28,7 @@ module.exports = {
 
       player.room.exits.push({ roomId: 'court:40256', direction: 'вниз', inferred: true });
       Broadcast.sayAt(player, 'Вы ловко освободили люк из под камней.');
-      Broadcast.sayAtExcept(player.room, `${actor.Name} ловко освободил${ending} люк из под камней.`, player);
+      Broadcast.sayAtExcept(player.room, `${player.Name} ловко освободил${ending} люк из под камней.`, player);
     },
 
     respawnTick: (state) => function () {

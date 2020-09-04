@@ -25,7 +25,7 @@ module.exports = {
       const leverUp = Array.from(player.room.items).find((item) => item.entityReference === 'court:40235');
       if (leverUp) {
         Broadcast.sayAt(player, 'Вы переключили рычаг в среднее положение.');
-        Broadcast.sayAtExcept(player.room, `${actor.Name} переключил${ending} рычаг в среднее положение.`, player);
+        Broadcast.sayAtExcept(player.room, `${player.Name} переключил${ending} рычаг в среднее положение.`, player);
         player.room.spawnItem(state, 'court:40236');
         return player.room.removeItem(leverUp);
       }
@@ -33,7 +33,7 @@ module.exports = {
       const leverMiddle = Array.from(player.room.items).find((item) => item.entityReference === 'court:40236');
       if (leverMiddle) {
         Broadcast.sayAt(player, 'Вы переключили рычаг в нижнее положение.');
-        Broadcast.sayAtExcept(player.room, `${actor.Name} переключил${ending} рычаг в нижнее положение.`, player);
+        Broadcast.sayAtExcept(player.room, `${player.Name} переключил${ending} рычаг в нижнее положение.`, player);
         player.room.spawnItem(state, 'court:40237');
         return player.room.removeItem(leverMiddle);
       }
@@ -41,7 +41,7 @@ module.exports = {
       const leverDown = Array.from(player.room.items).find((item) => item.entityReference === 'court:40237');
       if (leverDown) {
         Broadcast.sayAt(player, 'Вы переключили рычаг в верхнее положение.');
-        Broadcast.sayAtExcept(player.room, `${actor.Name} переключил${ending} рычаг в верхнее положение.`, player);
+        Broadcast.sayAtExcept(player.room, `${player.Name} переключил${ending} рычаг в верхнее положение.`, player);
         player.room.spawnItem(state, 'court:40235');
         return player.room.removeItem(leverDown);
       }

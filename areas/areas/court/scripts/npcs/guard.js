@@ -7,7 +7,12 @@ module.exports = {
         return;
       }
 
-      state.ChannelManager.get('say').send(state, this, 'Как смеешь ты прерывать мои молитвы!? Умри еретик!');
+      
+      if (player.hasItem('court:40270')) {
+        return;
+      }
+
+      state.ChannelManager.get('say').send(state, this, 'Эй! Ты чего здесь делаешь? Где твой пропуск?');
 
       this.initiateCombat(player);
     },
