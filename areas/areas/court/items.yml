@@ -520,6 +520,7 @@
       skills: ['heavy_armor']
 - id: 40217
   type: RESOURCE
+  materials: ['сукровица', 'ихор']
   name: "грязный носовой платок"
   rname: "грязного носового платка"
   dname: "грязному носовому платку"
@@ -684,6 +685,7 @@
       skills: ['various_weapons']
 - id: 40223
   type: RESOURCE
+  materials: ['флегма', 'ихор']
   name: "глаз утопленника"
   rname: "глаза утопленника"
   dname: "глазу утопленника"
@@ -1355,6 +1357,7 @@
     quality: common
 - id: 40251
   type: RESOURCE
+  materials: ['кристалл', 'кварц']
   name: "осколок палантира"
   rname: "осколка палантира"
   dname: "осколку палантира"
@@ -1427,6 +1430,7 @@
     quality: common
 - id: 40254
   type: RESOURCE
+  materials: ['мескалин', 'индиго']
   name: "пакетик с травкой"
   rname: "пакетика с травкой"
   dname: "пакетику с травкой"
@@ -1517,6 +1521,7 @@
     noPickup: true
 - id: 40258
   type: RESOURCE
+  materials: ['хромофор']
   name: "гнилой томат"
   rname: "гнилого томата"
   dname: "гнилому томату"

@@ -1476,6 +1476,18 @@
     earth_damage: 4
     health_regeneration: 20
     mana_regeneration: 20
+  metadata:
+    trainer:
+      spell: 'transmutation'
+      cost: 4
+      requirements: []
+    vendor:
+      items:
+        "craft:doriat_cube":
+          cost: 1000
+          currency: золото
+      enterMessage: "Обучаю трансмутации и продаю снаряжение для нее. Покупайте скорее!"
+      leaveMessage: "Поброжу по округе, если надумаешь вернуться."
   behaviors:
     allattributes: 3
     combat: true

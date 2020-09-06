@@ -209,6 +209,7 @@
       skills: [ 'light_armor' ]
 - id: 66807
   type: RESOURCE
+  materials: ['шерсть']
   name: "хвост белки"
   rname: "хвоста белки"
   dname: "хвосту белки"
@@ -260,6 +261,7 @@
       skills: [ 'bows' ]
 - id: 66809
   type: RESOURCE
+  materials: ['кость', 'амальгама']
   name: "золотой зуб"
   rname: "золотого зуба"
   dname: "золотому зубу"
@@ -691,6 +693,7 @@
     quality: common
 - id: 66829
   type: RESOURCE
+  materials: ['кристалл', 'орихалк']
   name: "необработанный топаз"
   rname: "необработанного топаза"
   dname: "необработанному топазу"
@@ -708,6 +711,7 @@
       currency: золото
 - id: 66830
   type: RESOURCE
+  materials: ['кристалл', 'порфир']
   name: "необработанный рубин"
   rname: "необработанного рубина"
   dname: "необработанному рубину"
@@ -725,6 +729,7 @@
       currency: золото
 - id: 66831
   type: RESOURCE
+  materials: ['кристалл', 'квасцы']
   name: "необработанный изумруд"
   rname: "необработанного изумруда"
   dname: "необработанному изумруду"
@@ -778,6 +783,7 @@
     quality: common
 - id: 66834
   type: RESOURCE
+  materials: ['воск', 'танин']
   name: "ветхий свиток"
   rname: "ветхого свитка"
   dname: "ветхому свитку"

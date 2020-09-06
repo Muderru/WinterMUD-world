@@ -16,6 +16,7 @@
     noPickup: true
 - id: 34701
   type: RESOURCE
+  materials: ['шерсть']
   name: "рыжий волос"
   rname: "рыжего волоса"
   dname: "рыжему волосу"
@@ -33,6 +34,7 @@
       currency: золото
 - id: 34702
   type: RESOURCE
+  materials: ['кожа']
   name: "кусочек грубой шкуры"
   rname: "кусочка грубой шкуры"
   dname: "кусочку грубой шкуры"
@@ -105,6 +107,7 @@
       skills: ['light_armor']
 - id: 34705
   type: RESOURCE
+  materials: ['шипы']
   name: "орлиное перо"
   rname: "орлиного пера"
   dname: "орлиному перу"
@@ -264,6 +267,7 @@
       skills: ['staves']
 - id: 34712
   type: RESOURCE
+  materials: ['шерсть']
   name: "кусочек гривы"
   rname: "кусочка гривы"
   dname: "кусочку гривы"
@@ -339,6 +343,7 @@
     noPickup: true
 - id: 34717
   type: RESOURCE
+  materials: ['шерсть']
   name: "мешок муки"
   rname: "мешка муки"
   dname: "мешку муки"

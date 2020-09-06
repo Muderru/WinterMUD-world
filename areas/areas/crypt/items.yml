@@ -223,6 +223,7 @@
       skills: ['staves']
 - id: 850053
   type: RESOURCE
+  materials: ['уксус', 'сукровица']
   name: "зеленая слизь"
   rname: "зеленой слизи"
   dname: "зеленой слизи"
@@ -268,6 +269,7 @@
       currency: золото
 - id: 850025
   type: RESOURCE
+  materials: ['амальгама', 'кость']
   name: "золотой зуб"
   rname: "золотого зуба"
   dname: "золотому зубу"
@@ -821,6 +823,7 @@
       skills: ['various_weapons']
 - id: 850034
   type: RESOURCE
+  materials: ['флегма']
   name: "печень"
   rname: "печени"
   dname: "печени"
@@ -936,6 +939,7 @@
       skills: ['light_armor']
 - id: 850024
   type: RESOURCE
+  materials: ['кость', 'шерсть']
   name: "прах древнего аристократа"
   rname: "праха древнего аристократа"
   dname: "праху древнего аристократа"
@@ -1165,6 +1169,7 @@
       duration: 240
 - id: 850054
   type: RESOURCE
+  materials: ['сукровица', 'индиго']
   name: "синяя слизь"
   rname: "синей слизи"
   dname: "синей слизи"
@@ -1291,6 +1296,7 @@
       currency: золото
 - id: 850055
   type: RESOURCE
+  materials: ['уксус', 'купорос']
   name: "ядовитая слизь"
   rname: "ядовитой слизи"
   dname: "ядовитой слизи"

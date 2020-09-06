@@ -444,6 +444,7 @@
       skills: ['light_armor']
 - id: 70516
   type: RESOURCE
+  materials: ['ртуть', 'флогистон']
   name: "философский камень"
   rname: "философского камня"
   dname: "философскому камню"

@@ -295,6 +295,7 @@
       skills: ['light_armor']
 - id: 66710
   type: RESOURCE
+  materials: ['хитин', 'флегма']
   name: "кусочек паутины"
   rname: "кусочка паутины"
   dname: "кусочку паутины"
@@ -961,6 +962,7 @@
       currency: золото
 - id: 66737
   type: RESOURCE
+  materials: ['мифрил', 'адамантит']
   name: "золотой осколок"
   rname: "золотого осколка"
   dname: "золотому осколку"

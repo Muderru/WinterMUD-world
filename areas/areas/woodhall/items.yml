@@ -331,6 +331,7 @@
       skills: ['various_weapons']
 - id: 34811
   type: RESOURCE
+  materials: ['мескалин', 'куркумин']
   name: "белый гриб"
   rname: "белого гриба"
   dname: "белому грибу"
@@ -411,6 +412,7 @@
       skills: ['maces']
 - id: 34814
   type: RESOURCE
+  materials: ['ихор', 'шипы']
   name: "рыбья чешуйка"
   rname: "рыбьей чешуйки"
   dname: "рыбьей чешуйке"

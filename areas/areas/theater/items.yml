@@ -808,6 +808,7 @@
     noPickup: true
 - id: 47731
   type: RESOURCE
+  materials: ['хромофор']
   name: "белая пудра"
   rname: "белой пудры"
   dname: "белой пудре"
@@ -825,6 +826,7 @@
       currency: золото
 - id: 47732
   type: RESOURCE
+  materials: ['пурпур']
   name: "красная пудра"
   rname: "красной пудры"
   dname: "красной пудре"
@@ -842,6 +844,7 @@
       currency: золото
 - id: 47733
   type: RESOURCE
+  materials: ['индиго']
   name: "голубая пудра"
   rname: "голубой пудры"
   dname: "голубой пудре"
@@ -1045,6 +1048,7 @@
       currency: золото
 - id: 47747
   type: RESOURCE
+  materials: ['воск', 'древесина']
   name: "древесная щепка"
   rname: "древесной щепки"
   dname: "древесной щепке"
